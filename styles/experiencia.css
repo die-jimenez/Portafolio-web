@@ -1,157 +1,122 @@
-/* Estilos específicos para la página de experiencia */
+:root {
+  --cream-color: #FBF5EB;
+  --dark-color: #1B1B1B;
+  --montserrat: 'Montserrat', sans-serif;
+  --roboto: 'Roboto', sans-serif;
+}
 
-.experiencia-section {
+/* Experience Card */
+.experience-card {
+  background-color: var(--cream-color); /* Cambiado para que coincida con el fondo principal */
+  border: 4px solid var(--dark-color);
+  padding: 2rem 2rem 1.5rem 2rem;
+  margin-bottom: 0;
+}
+
+.experience-content {
   display: flex;
-  flex-direction: column;
-  background-color: #FBF5EB;
-  border: 1px solid #1B1B1B;
-  margin-bottom: 2rem;
+  gap: 2rem;
 }
 
-.experiencia-header {
-  padding: 2rem;
-  border-bottom: 1px solid #1B1B1B;
+.experience-text {
+  flex: 3;
 }
 
-.experiencia-header h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
+.experience-details {
+  flex: 1;
+  border-left: 1px solid var(--dark-color);
+  padding-left: 2rem;
+}
+
+.experience-text h2 {
+  font-size: 28px;
   margin-bottom: 0.5rem;
 }
 
-.experiencia-subtitulo {
-  font-size: 1rem;
-  font-weight: 400;
+.experience-text p {
+  font-family: var(--roboto);
+}
+
+.company{
+  color: var(--dark-color);
+  font-weight: 200;
+  font-size: 18px;
   margin-bottom: 1.5rem;
 }
 
-.experiencia-descripcion {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-.referencia-container {
-  display: flex;
-  padding: 2rem;
-  border-bottom: 1px solid #1B1B1B;
-}
-
-.empresa-info {
-  width: 40%;
-}
-
-.referencia-info {
-  width: 60%;
-}
-
-.empresa-info h4,
-.referencia-info h4 {
-  font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 0.5rem;
-}
-
-.empresa-info p,
-.referencia-info p {
-  font-size: 1rem;
-  font-weight: 400;
-  line-height: 1.5;
-}
-
-.tecnologias {
-  padding: 2rem;
-}
-
-.tecnologias h4 {
-  font-size: 1rem;
-  font-weight: 700;
-  margin-bottom: 1rem;
-}
-
-.tecnologias-tags {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 0.5rem;
-}
-
-.tag {
-  display: inline-block;
-  background-color: #1B1B1B;
-  color: #FBF5EB;
-  padding: 0.5rem 1rem;
-  border-radius: 20px;
-  font-size: 0.9rem;
-  font-weight: 400;
-}
-
-/* Sección de proyectos */
-.proyectos-section {
-  background-color: #1B1B1B;
-  color: #FBF5EB;
-  padding: 2rem;
-}
-
-.proyectos-section h3 {
-  font-size: 1.5rem;
-  font-weight: 700;
-  margin-bottom: 2rem;
-}
-
-.proyectos-container {
-  display: flex;
-  gap: 2rem;
-  flex-wrap: wrap;
-}
-
-.proyecto-card {
-  width: calc(50% - 1rem);
-  position: relative;
-}
-
-.proyecto-imagen {
-  background-color: #1B1B1B;
-  padding: 10px;
-}
-
-.proyecto-imagen img {
-  width: 100%;
-  height: auto;
-  display: block;
-}
-
-.proyecto-detalles {
-  margin-top: 1rem;
-}
-
-.proyecto-detalles a {
-  color: #FBF5EB;
-  font-weight: 400;
-  display: flex;
-  align-items: center;
-  gap: 0.5rem;
-}
-
-.proyecto-detalles span {
+.description {
+  margin-bottom: 1.5rem;
   font-size: 1.2rem;
 }
 
-/* Responsive */
-@media (max-width: 768px) {
-  .referencia-container {
-      flex-direction: column;
-  }
-  
-  .empresa-info,
-  .referencia-info {
-      width: 100%;
-  }
-  
-  .empresa-info {
-      margin-bottom: 1.5rem;
-  }
-  
-  .proyecto-card {
-      width: 100%;
-  }
+.experience-text h3 {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.technologies {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+.tech-tag {
+  background-color: var(--dark-color);
+  color: var(--cream-color);
+  padding: 0.35rem 0.85rem;
+  border-radius: 50px;
+  font-size: 0.9rem;
+  font-weight: 700;
+}
+
+.detail-title {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+
+.detail-item {
+  margin-bottom: 1.5rem;
+}
+
+/* Portfolio Section */
+.portfolio-section {
+  background-color: var(--dark-color);
+  color: var(--cream-color);
+  padding: 2rem;
+}
+
+.portfolio-section h2 {
+  margin-bottom: 1.5rem;
+}
+
+.projects-grid {
+  display: flex;
+  gap: 1rem;
+}
+
+.project-card {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-card img {
+  width: 280px;
+  height: auto;
+  margin-bottom: 1rem;
+}
+
+.detail-button {
+  align-self: flex-start;
+  background-color: var(--cream-color);
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.3rem;
+}
+
+.detail-button span {
+  font-size: 1.2rem;
 }

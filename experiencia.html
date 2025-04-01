@@ -3,104 +3,89 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Diego Jiménez | Desarrollador de Videojuego</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <title>Diego Jiménez | Game Developer</title>
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/experiencia.css">
 </head>
+
+
 <body>
     <header>
         <div class="header-container">
-            <div class="nombre-titulo">
+            <div class="name-title">
                 <h1>Diego Jiménez</h1>
                 <span class="separator">|</span>
-                <h2>Desarrollador de Videojuego</h2>
+                <h2>Game Developer</h2>
             </div>
-            <div class="idioma-selector">
-                <span class="idioma active">EN</span>
+            <div class="language-selector">
+                <span class="language active">EN</span>
                 <label class="switch">
                     <input type="checkbox">
                     <span class="slider round"></span>
                 </label>
-                <span class="idioma">ES</span>
+                <span class="language">ES</span>
             </div>
         </div>
     </header>
 
-    <div class="contenido">
-        <nav class="menu-lateral">
+    <div class="content">
+        <nav class="side-menu">
             <ul>
                 <li><a href="index.html" class="menu-item">Sobre mi</a></li>
                 <li><a href="experiencia.html" class="menu-item active">Experiencia</a></li>
                 <li><a href="portafolio.html" class="menu-item">Portafolio</a></li>
-                <li><a href="estudios.html" class="menu-item">Estudios</a></li>
+                <li><a href="educaccion.html" class="menu-item">Educacion</a></li>
                 <li><a href="habilidades.html" class="menu-item">Habilidades</a></li>
-                <li><a href="otros-proyectos.html" class="menu-item">Otros Proyectos</a></li>
+                <li><a href="otrosProyectos.html" class="menu-item">Otros proyectos</a></li>
             </ul>
         </nav>
 
-        <main class="contenido-principal">
-            <section class="experiencia-section">
-                <div class="experiencia-header">
-                    <h3>Desarrollador de Videojuegos y Web</h3>
-                    <p class="experiencia-subtitulo">Verne Studio (2022 - 2023) | CABA | Remoto</p>
+        <main class="main-content">
+            <section class="experience-card">
+                <div class="experience-content">
+                    <div class="experience-text">
+                        <h2>Desarrollador de Videojuegos y Web</h2>
+                        <p class="company">Verne Studio (2022 - 2023) | CABA | Remoto</p>
+                        
+                        <p class="description">Participé en 5 proyectos, 3 de ellos como programador principal. Todos videojuegos multijugadores online de computadora, controlables con celulares, desarrollados para ferias empresariales.</p>
+                        
+                        <h3>Tecnologías</h3>
+                        <div class="technologies">
+                            <span class="tech-tag">Unity</span>
+                            <span class="tech-tag">WebSocket</span>
+                            <span class="tech-tag">Vue.js</span>
+                            <span class="tech-tag">NodeJS</span>
+                            <span class="tech-tag">Payload CMS</span>
+                            <span class="tech-tag">WebGL</span>
+                            <span class="tech-tag">S-CSS</span>
+                            <span class="tech-tag">Juegos multijugador</span>
+                        </div>
+                    </div>
                     
-                    <p class="experiencia-descripcion">
-                        Participé en 5 proyectos, 3 de ellos como programador principal. 
-                        Todos videojuegos multijugadores online de computadora, 
-                        controlables con celulares, desarrollados para ferias empresariales.
-                    </p>
-                </div>
-
-                <div class="referencia-container">
-                    <div class="empresa-info">
-                        <h4>Empresa:</h4>
-                        <p>Studio Verne</p>
-                    </div>
-                    <div class="referencia-info">
-                        <h4>Referencia:</h4>
-                        <p>Matias Juaregui</p>
-                        <p>Project Manager</p>
-                        <p>matiasjj@gmail.com</p>
-                        <p>11-7362848</p>
-                    </div>
-                </div>
-
-                <div class="tecnologias">
-                    <h4>Tecnologías</h4>
-                    <div class="tecnologias-tags">
-                        <span class="tag">Unity</span>
-                        <span class="tag">WebSocket</span>
-                        <span class="tag">Vue.js</span>
-                        <span class="tag">NodeJS</span>
-                        <span class="tag">Payload CMS</span>
-                        <span class="tag">WebGL</span>
-                        <span class="tag">S-CSS</span>
-                        <span class="tag">Juegos multijugador</span>
+                    <div class="experience-details">
+                        <div class="detail-item">
+                            <p class="detail-title">Empresa:</p>
+                            <p class="detail-content">Studio Verne</p>
+                        </div>
+                        
+                        <div class="detail-item">
+                            <p class="detail-title">Referencia:</p>
+                            <p class="detail-content">Matias Juaregui<br>Project Manager<br>matiasjl@gmail.com<br>11-7362848</p>
+                        </div>
                     </div>
                 </div>
             </section>
-
-            <section class="proyectos-section">
-                <h3>Proyectos en portafolio</h3>
-                <div class="proyectos-container">
-                    <div class="proyecto-card">
-                        <div class="proyecto-imagen">
-                            <img src="https://via.placeholder.com/500x300" alt="Proyecto 1">
-                        </div>
-                        <div class="proyecto-detalles">
-                            <a href="#">Más detalles <span>&rarr;</span></a>
-                        </div>
+            
+            <section class="portfolio-section">
+                <h2>Proyectos en portafolio</h2>
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <img src="https://placehold.co/600x400" alt="Proyecto 1">
+                        <button class="detail-button">Más detalles <span>&rsaquo;</span></button>
                     </div>
-                    <div class="proyecto-card">
-                        <div class="proyecto-imagen">
-                            <img src="https://via.placeholder.com/500x300" alt="Proyecto 2">
-                        </div>
-                        <div class="proyecto-detalles">
-                            <a href="#">Más detalles <span>&rarr;</span></a>
-                        </div>
+                    <div class="project-card">
+                        <img src="https://placehold.co/600x400" alt="Proyecto 2">
+                        <button class="detail-button">Más detalles <span>&rsaquo;</span></button>
                     </div>
                 </div>
             </section>
@@ -109,8 +94,8 @@
 
     <footer>
         <div class="footer-container">
-            <div class="correo">Diegojimenez2010@gmail.com</div>
-            <div class="ubicacion">La Plata, Buenos Aires, Argentina</div>
+            <div class="email">Diegojimenez2010@gmail.com</div>
+            <div class="location">La Plata, Buenos Aires, Argentina</div>
         </div>
     </footer>
 </body>
