@@ -40,7 +40,7 @@ ul {
   min-width: 800px;
   max-width: 1400px;
   margin: 0 auto 0 11%;
-  width: 100%;
+  width: 85%;
 }
 
 .header-container {
@@ -246,24 +246,3 @@ footer {
   }
 }
 
-/* Basic responsive design */
-@media (max-width: 768px) {
-  .content {
-    flex-direction: column;
-  }
-
-  .side-menu {
-    width: 100%;
-    padding: 1rem 2rem;
-  }
-
-  .side-menu ul {
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 1rem 2rem;
-  }
-
-  .main-content {
-    max-width: 100%;
-  }
-}
