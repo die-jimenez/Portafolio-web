@@ -1,122 +1,157 @@
-:root {
-  --cream-color: #FBF5EB;
-  --dark-color: #1B1B1B;
-  --montserrat: 'Montserrat', sans-serif;
-  --roboto: 'Roboto', sans-serif;
-}
+/* Estilos específicos para la página de experiencia */
 
-/* Experience Card */
-.experience-card {
-  background-color: var(--cream-color); /* Cambiado para que coincida con el fondo principal */
-  border: 4px solid var(--dark-color);
-  padding: 2rem 2rem 1.5rem 2rem;
-  margin-bottom: 0;
-}
-
-.experience-content {
+.experiencia-section {
   display: flex;
-  gap: 2rem;
+  flex-direction: column;
+  background-color: #FBF5EB;
+  border: 1px solid #1B1B1B;
+  margin-bottom: 2rem;
 }
 
-.experience-text {
-  flex: 3;
+.experiencia-header {
+  padding: 2rem;
+  border-bottom: 1px solid #1B1B1B;
 }
 
-.experience-details {
-  flex: 1;
-  border-left: 1px solid var(--dark-color);
-  padding-left: 2rem;
-}
-
-.experience-text h2 {
-  font-size: 28px;
+.experiencia-header h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
-.experience-text p {
-  font-family: var(--roboto);
-}
-
-.company{
-  color: var(--dark-color);
-  font-weight: 200;
-  font-size: 18px;
+.experiencia-subtitulo {
+  font-size: 1rem;
+  font-weight: 400;
   margin-bottom: 1.5rem;
 }
 
-.description {
-  margin-bottom: 1.5rem;
-  font-size: 1.2rem;
+.experiencia-descripcion {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
 }
 
-.experience-text h3 {
-  font-size: 1.2rem;
+.referencia-container {
+  display: flex;
+  padding: 2rem;
+  border-bottom: 1px solid #1B1B1B;
+}
+
+.empresa-info {
+  width: 40%;
+}
+
+.referencia-info {
+  width: 60%;
+}
+
+.empresa-info h4,
+.referencia-info h4 {
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: 0.5rem;
+}
+
+.empresa-info p,
+.referencia-info p {
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: 1.5;
+}
+
+.tecnologias {
+  padding: 2rem;
+}
+
+.tecnologias h4 {
+  font-size: 1rem;
+  font-weight: 700;
   margin-bottom: 1rem;
 }
 
-.technologies {
+.tecnologias-tags {
   display: flex;
   flex-wrap: wrap;
   gap: 0.5rem;
 }
 
-.tech-tag {
-  background-color: var(--dark-color);
-  color: var(--cream-color);
-  padding: 0.35rem 0.85rem;
-  border-radius: 50px;
+.tag {
+  display: inline-block;
+  background-color: #1B1B1B;
+  color: #FBF5EB;
+  padding: 0.5rem 1rem;
+  border-radius: 20px;
   font-size: 0.9rem;
-  font-weight: 700;
+  font-weight: 400;
 }
 
-.detail-title {
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
-.detail-item {
-  margin-bottom: 1.5rem;
-}
-
-/* Portfolio Section */
-.portfolio-section {
-  background-color: var(--dark-color);
-  color: var(--cream-color);
+/* Sección de proyectos */
+.proyectos-section {
+  background-color: #1B1B1B;
+  color: #FBF5EB;
   padding: 2rem;
 }
 
-.portfolio-section h2 {
-  margin-bottom: 1.5rem;
+.proyectos-section h3 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 2rem;
 }
 
-.projects-grid {
+.proyectos-container {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
+  flex-wrap: wrap;
 }
 
-.project-card {
-  flex: 1;
-  display: flex;
-  flex-direction: column;
+.proyecto-card {
+  width: calc(50% - 1rem);
+  position: relative;
 }
 
-.project-card img {
-  width: 280px;
+.proyecto-imagen {
+  background-color: #1B1B1B;
+  padding: 10px;
+}
+
+.proyecto-imagen img {
+  width: 100%;
   height: auto;
-  margin-bottom: 1rem;
+  display: block;
 }
 
-.detail-button {
-  align-self: flex-start;
-  background-color: var(--cream-color);
-  border: none;
-  padding: 0.5rem 1rem;
-  cursor: pointer;
+.proyecto-detalles {
+  margin-top: 1rem;
+}
+
+.proyecto-detalles a {
+  color: #FBF5EB;
+  font-weight: 400;
   display: flex;
   align-items: center;
-  gap: 0.3rem;
+  gap: 0.5rem;
 }
 
-.detail-button span {
+.proyecto-detalles span {
   font-size: 1.2rem;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .referencia-container {
+      flex-direction: column;
+  }
+  
+  .empresa-info,
+  .referencia-info {
+      width: 100%;
+  }
+  
+  .empresa-info {
+      margin-bottom: 1.5rem;
+  }
+  
+  .proyecto-card {
+      width: 100%;
+  }
 }
