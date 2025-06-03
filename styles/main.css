@@ -65,8 +65,13 @@ ul {
 .content {
   min-width: 800px;
   max-width: 1400px;
+<<<<<<< HEAD
   margin: 0 auto 0 9%;
   width: 85%;
+=======
+  margin: 0 auto 0 11%;
+  width: 100%;
+>>>>>>> parent of 558303d (Update)
 }
 
 .header-container,
@@ -274,3 +279,24 @@ footer {
   }
 }
 
+/* Basic responsive design */
+@media (max-width: 768px) {
+  .content {
+    flex-direction: column;
+  }
+
+  .side-menu {
+    width: 100%;
+    padding: 1rem 2rem;
+  }
+
+  .side-menu ul {
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem 2rem;
+  }
+
+  .main-content {
+    max-width: 100%;
+  }
+}
