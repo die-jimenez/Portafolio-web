@@ -55,6 +55,19 @@ ul {
   color: #1B1B1B;
 }
 
+.margin-bottom-20 {
+  margin-bottom: 20px;
+}
+
+.padding-top-25 {
+  padding-top: 25px;
+}
+
+.padding-top-40 {
+  padding-top: 40px;
+}
+
+
 /* Maximum width containers */
 
 .content {
