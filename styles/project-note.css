@@ -56,14 +56,14 @@
   transform: translate(-50%, 50%);  
 }
 
-.play-button {
+.button-itchio {
   display: inline-flex;
   justify-content: space-between;
   align-items: center;
   background-color: #1B1B1B; 
   color: #FBF5EB; 
-  width: 140px;
-  height: 35px;
+  width: 170px;
+  height: 40px;
 
   font-family: 'Montserrat', sans-serif;
   text-decoration: none;
@@ -74,7 +74,7 @@
      
 }
 
-.play-button .arrow {
+.button-itchio .arrow {
   font-size: 24px;
   font-weight: 400;
   margin-left: 8px;
@@ -82,7 +82,7 @@
   transform: translateY(-2px);
 }
 
-.play-button:hover {
+.button-itchio:hover {
   background-color: #4e4e4e; /* ligero cambio al hacer hover */
 }
 
@@ -199,5 +199,23 @@
 
 .text-section ul li {
   margin-bottom: 5px;
+}
+
+.text-with-image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+.text-with-image > div:first-child {
+  width: 60%;
+  padding-right: 20px;
+}
+
+
+.text-with-image > img {
+  width: 40%;
+  height: auto;
 }
 
