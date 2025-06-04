@@ -47,52 +47,68 @@ function setLanguage(lang) {
   });
 }
 
-// 6) Cuando cargue el DOM:
 document.addEventListener('DOMContentLoaded', () => {
-  // 6.1) Leemos el atributo del <html> o <body> que nos diga la sheet específica
-  //      Primero probamos en <html>, si no existe, buscamos en <body>
-  let sheetSpecific = document.documentElement.getAttribute('searchText-sheet');
-  if (!sheetSpecific) {
-    sheetSpecific = document.body.getAttribute('searchText-sheet');
-  }
+  // 1. Cargar las traducciones primero
+  function loadTranslations() {
+    let sheetSpecific = document.documentElement.getAttribute('searchText-sheet') || 
+                       document.body.getAttribute('searchText-sheet') || 
+                       null;
 
-  // Si no hay atributo, asumimos que sólo cargamos “general”.
-  if (!sheetSpecific) {
-    sheetSpecific = null; 
-  }
+    const toLoad = [...COMMON_SHEETS];
+    if (sheetSpecific) toLoad.push(sheetSpecific);
 
-  // 6.2) Armamos un array de promesas para cargar JSONs:
-  //      Siempre cargamos “general.json” + la sheet específica (si existe).
-  const toLoad = [...COMMON_SHEETS];         // ej. ['general']
-  if (sheetSpecific) {
-    toLoad.push(sheetSpecific);             // ej. ['general','homepage']
-  }
-
-  // 6.3) Convertimos cada nombre en una promesa fetch:
-  const promises = toLoad.map(name => loadJSONSheet(name));
-
-  // 6.4) Esperamos a que termine de cargar todo
-  Promise.all(promises)
-    .then(results => {
-      // “results” es un array de arreglos JSON: e.g. [ dataGeneral, dataHomepage ]
-      results.forEach(jsonArray => {
-        addToTranslations(jsonArray);
+    return Promise.all(toLoad.map(loadJSONSheet))
+      .then(results => {
+        results.forEach(addToTranslations);
+        return true; // Indicar que las traducciones están listas
       });
+  };
 
-      // 6.5) Establecemos un idioma inicial (p.ej. “EN”)
+  // 2. Configurar el sistema de idiomas después de cargar traducciones
+  function setupLanguageSystem() {
+    const languageSwitch = document.getElementById('cambio-idioma');
+    
+    // Verificar si existe el elemento
+    if (!languageSwitch) {
+      console.error('Elemento #cambio-idioma no encontrado');
+      return;
+    }
+
+    // Estado inicial basado en el atributo lang del documento
+    const currentLang = "EN";
+    languageSwitch.checked = currentLang === 'EN';
+
+    // Event handler
+    languageSwitch.addEventListener('change', function() {
+      const newLang = this.checked ? 'EN' : 'ES';
+      setLanguage(newLang);
+      if (newLang === 'EN') {
+        document.getElementById('EN_text').classList.add("active");
+        document.getElementById('ES_text').classList.remove("active");
+      }
+      else {
+        document.getElementById('EN_text').classList.remove("active");
+        document.getElementById('ES_text').classList.add("active");
+      }
+      document.documentElement.setAttribute('lang', newLang);
+    });
+  };
+
+  // 3. Secuencia correcta: primero cargar traducciones, luego configurar switch
+  loadTranslations()
+    .then(() => {
+      // Establecer idioma inicial
       const defaultLang = 'EN';
       setLanguage(defaultLang);
-
-      // 6.6) Si tenés un <select id="selector-idioma">, lo vinculás:
-      const selector = document.getElementById('selector-idioma');
-      if (selector) {
-        selector.value = defaultLang;
-        selector.addEventListener('change', () => {
-          setLanguage(selector.value);
-        });
-      }
+      document.documentElement.setAttribute('lang', defaultLang);
+      
+      // Ahora configurar el switch
+      setupLanguageSystem();
     })
     .catch(err => {
-      console.error('Error al cargar traducciones:', err);
+      console.error('Error cargando traducciones:', err);
     });
 });
+
+
+
