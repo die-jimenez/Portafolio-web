@@ -60,8 +60,8 @@ ul {
   color: #1B1B1B;
 }
 
-.margin-bottom-20 {
-  margin-bottom: 20px;
+.mb-20 {
+  margin-bottom: 20px !important;
 }
 
 .padding-top-25 {
