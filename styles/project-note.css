@@ -164,7 +164,7 @@
 }
 
 
-/* ----- Textos -----*/
+/* ----- Textos simple -----*/
 .text-section {
   width: 100%;
   margin-top: 40px;
@@ -201,6 +201,7 @@
   margin-bottom: 5px;
 }
 
+/* ----- Textos con una imagen -----*/
 .text-with-image {
   display: flex;
   align-items: center;
@@ -219,3 +220,35 @@
   height: auto;
 }
 
+/* ----- Textos con fondo oscuro -----*/
+.text-dark-container {
+  background-color: var(--dark-color);
+  color: var(--cream-color);
+  margin: 40px -40px 0 -40px;
+  padding: 40px 40px 0px 40px;
+}
+
+.dark {
+  color: var(--cream-color) !important;
+}
+
+.images-dark-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 40px 0px 60px 0px;
+  gap: 5%;
+}
+
+.images-dark-container > div{
+  width: 100%;
+  height: auto;
+  background-color: var(--cream-color);
+  padding: 8px 8px 4px 8px;
+}
+
+.images-dark-container img {
+  width: 100%;
+  height: auto;
+}
