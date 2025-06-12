@@ -50,9 +50,9 @@ function setLanguage(lang) {
 document.addEventListener('DOMContentLoaded', () => {
   // 1. Cargar las traducciones primero
   function loadTranslations() {
-    let sheetSpecific = document.documentElement.getAttribute('searchText-sheet') || 
-                       document.body.getAttribute('searchText-sheet') || 
-                       null;
+    let sheetSpecific = document.documentElement.getAttribute('searchText-sheet') ||
+      document.body.getAttribute('searchText-sheet') ||
+      null;
 
     const toLoad = [...COMMON_SHEETS];
     if (sheetSpecific) toLoad.push(sheetSpecific);
@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
   // 2. Configurar el sistema de idiomas después de cargar traducciones
   function setupLanguageSystem() {
     const languageSwitch = document.getElementById('cambio-idioma');
-    
+
     // Verificar si existe el elemento
     if (!languageSwitch) {
       console.error('Elemento #cambio-idioma no encontrado');
@@ -76,20 +76,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Estado inicial basado en el atributo lang del documento
     const currentLang = "EN";
-    languageSwitch.checked = currentLang === 'EN';
+    languageSwitch.checked = currentLang === 'ES';
 
     // Event handler
-    languageSwitch.addEventListener('change', function() {
+    languageSwitch.addEventListener('change', function () {
       const newLang = this.checked ? 'EN' : 'ES';
       setLanguage(newLang);
-      if (newLang === 'EN') {
-        document.getElementById('EN_text').classList.add("active");
-        document.getElementById('ES_text').classList.remove("active");
-      }
-      else {
-        document.getElementById('EN_text').classList.remove("active");
-        document.getElementById('ES_text').classList.add("active");
-      }
+      //toggle elimina la clase si ya la tiene, y la agrega sino la tiene
+      document.getElementById('EN_text').classList.toggle("active");
+      document.getElementById('ES_text').classList.toggle("active");
       document.documentElement.setAttribute('lang', newLang);
     });
   };
@@ -101,7 +96,7 @@ document.addEventListener('DOMContentLoaded', () => {
       const defaultLang = 'EN';
       setLanguage(defaultLang);
       document.documentElement.setAttribute('lang', defaultLang);
-      
+
       // Ahora configurar el switch
       setupLanguageSystem();
     })
