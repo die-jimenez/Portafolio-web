@@ -200,8 +200,11 @@ input:checked+.slider:before {
 }
 
 /* Side menu */
-.side-menu {
+side-menu { /*---COMPONENTE---*/
   width: 20%;
+}
+
+.side-menu {
   display: flex;
   flex-direction: column;
   justify-content: space-between;

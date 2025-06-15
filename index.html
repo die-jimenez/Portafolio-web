@@ -1,45 +1,27 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Diego Jiménez | Game Developer</title>
+    <!-- styles -->
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/about.css">
+    <!-- templates -->
     <script src="scripts/translation.js"></script>
+    <script src="scripts/templates/main-header.js"></script>
+    <script src="scripts/templates/side-menu.js"></script>
 </head>
 
 
 <body>
     <header>
-        <div class="header-container">
-            <div class="name-title">
-                <h1>Diego Jiménez</h1>
-                <span class="separator">|</span>
-                <h2>Game Developer</h2>
-            </div>
-            <div class="language-selector">
-                <span class="language active" id="EN_text">EN</span>
-                <label class="switch">
-                    <input type="checkbox" id="cambio-idioma">
-                    <span class="slider round"></span>
-                </label>
-                <span class="language" id="ES_text">ES</span>
-            </div>
-        </div>
+        <main-header></main-header>
     </header>
 
     <section class="content">
-        <nav class="side-menu">
-            <ul>
-                <li><a href="index.html" class="menu-item active">Sobre mi</a></li>
-                <li><a href="experiencia.html" class="menu-item">Experiencia</a></li>
-                <li><a href="portafolio.html" class="menu-item">Portafolio</a></li>
-                <li><a href="educacion.html" class="menu-item">Educacion</a></li>
-                <li><a href="habilidades.html" class="menu-item">Habilidades</a></li>
-                <li><a href="otrosProyectos.html" class="menu-item">Otros proyectos</a></li>
-            </ul>
-        </nav>
+        <side-menu active="1"></side-menu>
 
         <main class="main-content">
             <section class="about-me-section">
@@ -50,14 +32,14 @@
                     <div class="profile-info">
                         <h3 searchText="saludo">Hello! I'm Die</h3>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Donec vel egestas dolor, nec dignissim metus. Donec 
-                            augue elit, rhoncus ac sodales id, porttitor vitae est. 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Donec vel egestas dolor, nec dignissim metus. Donec
+                            augue elit, rhoncus ac sodales id, porttitor vitae est.
                             Donec laoreet rutrum libero sed pharetra.
                         </p>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
-                            Donec vel egestas dolor, nec dignissim metus. Donec 
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Donec vel egestas dolor, nec dignissim metus. Donec
                             augue elit, rhoncus ac sodales id, porttitor
                         </p>
                     </div>

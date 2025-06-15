@@ -5,43 +5,24 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diego Jiménez | Game Developer</title>
-  <link rel="stylesheet" href="styles/main.css">
-  <link rel="stylesheet" href="styles/project-note.css">
-  <link rel="stylesheet" href="styles/roots-defense.css">
-
+  <!-- styles -->
+  <link rel="stylesheet" href="/styles/main.css">
+  <link rel="stylesheet" href="/styles/project-note.css">
+  <link rel="stylesheet" href="/styles/roots-defense.css">
+  <!-- templates -->
+    <script src="/scripts/translation.js"></script>
+    <script src="/scripts/templates/main-header.js"></script>
+    <script src="/scripts/templates/side-menu.js"></script>
 </head>
 
 
 <body>
   <header>
-    <div class="header-container">
-      <div class="name-title">
-        <h1>Diego Jiménez</h1>
-        <span class="separator">|</span>
-        <h2>Game Developer</h2>
-      </div>
-      <div class="language-selector">
-        <span class="language active">EN</span>
-        <label class="switch">
-          <input type="checkbox">
-          <span class="slider round"></span>
-        </label>
-        <span class="language">ES</span>
-      </div>
-    </div>
+    <main-header></main-header>
   </header>
 
   <section class="content">
-    <nav class="side-menu">
-      <ul>
-        <li><a href="index.html" class="menu-item">Sobre mi</a></li>
-        <li><a href="experiencia.html" class="menu-item">Experiencia</a></li>
-        <li><a href="portafolio.html" class="menu-item active">Portafolio</a></li>
-        <li><a href="educacion.html" class="menu-item">Educacion</a></li>
-        <li><a href="habilidades.html" class="menu-item">Habilidades</a></li>
-        <li><a href="otrosProyectos.html" class="menu-item">Otros proyectos</a></li>
-      </ul>
-    </nav>
+    <side-menu active="3"></side-menu>
 
     <main class="main-content">
       <section class="project-section">
@@ -52,7 +33,7 @@
         <div class="project-info">
           <div class="iframe-container">
             <div class="video-overlay">
-              <img src="img/roots-defense-main.png" alt="Thumbnail del video" class="video-thumb" />
+              <img src="/img/roots-defense/main.png" alt="Thumbnail del video" class="video-thumb" />
               <div class="play-button">▶</div>
             </div>
             <iframe class="video-iframe" data-src="https://www.youtube.com/embed/UPetdaUQQxk?autoplay=1&vq=hd1080"

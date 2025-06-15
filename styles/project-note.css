@@ -13,7 +13,7 @@
 .project-head {
   width: 100%;
   height: 120px;
-  padding: 0 40px;
+  padding: 0 60px;
   margin-bottom: 40px;
   background-color: var(--dark-color);
 }
@@ -35,7 +35,7 @@
 
 .project-info {
   width: 100%;
-  padding: 0 40px;
+  padding: 0 60px;
 }
 
 /* ----- Imagen principal y boton -----*/
@@ -224,8 +224,8 @@
 .text-dark-container {
   background-color: var(--dark-color);
   color: var(--cream-color);
-  margin: 40px -40px 0 -40px;
-  padding: 40px 40px 0px 40px;
+  margin: 40px -60px 0 -60px;
+  padding: 40px 60px 0px 60px;
 }
 
 .dark {
