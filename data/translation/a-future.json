@@ -1,0 +1,57 @@
+[
+  {
+    "key": "",
+    "ES": "",
+    "EN": ""
+  },
+  {
+    "key": "",
+    "ES": "",
+    "EN": ""
+  },
+  {
+    "key": "",
+    "ES": "",
+    "EN": ""
+  },
+  {
+    "key": "",
+    "ES": "",
+    "EN": ""
+  },
+  {
+    "key": "",
+    "ES": "",
+    "EN": ""
+  },
+  {
+    "key": "",
+    "ES": "",
+    "EN": ""
+  },
+  {
+    "key": "",
+    "ES": "",
+    "EN": ""
+  },
+  {
+    "key": "future-path-p1",
+    "ES": "En cierta fase del juego, tu personaje se mueve solo y adquiere dos comportamientos: huir y perseguir objetivos entre cientos de enemigos en movimiento. Para ello implementé un sistema basado en el movimiento de los bots del juego \"F1 2011\", explicado en el artículo <strong>Context Steering, Behavior-Driven Steering at the Macro Scale</strong>, escrito por Andrew Fray. <br><a href=\"https://www.gameaipro.com/GameAIPro2/GameAIPro2_Chapter18_Context_Steering_Behavior-Driven_Steering_at_the_Macro_Scale.pdf\" target=\"_blank\">[disponible aquí]</a>",
+    "EN": "About me"
+  },
+  {
+    "key": "future-path-p2",
+    "ES": "Este consiste en la creación de mapas contextuales, conseguidos al proyectar el personaje en varias direcciones y calculando lo peligrosa o interesante que es dicha posición en base a la distancia, ángulos y otros parámetros con respecto a los enemigos cercanos.",
+    "EN": "Experience"
+  },
+  {
+    "key": "future-path-p3",
+    "ES": "Desarrollé principalmente dos tipos de comportamientos: huir y perseguir enemigos. Estos son fácilmente modificables, y su lógica (similar a la distribución de pesos en un rigging) tiene la potencialidad de crear otros comportamientos mediante tres operaciones matemáticas simples.",
+    "EN": ""
+  },
+  {
+    "key": "future-path-p4",
+    "ES": "<strong>Rendimiento:</strong> 0.30-0.65ms por agente mediante cálculos matemáticos puros <strong>(sin raycast)</strong>, recalculando cada 3 frames, permitiendo desplazarse entre cientos de enemigos en movimiento sin impacto en el rendimiento.",
+    "EN": ""
+  }
+]

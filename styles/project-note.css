@@ -178,7 +178,7 @@
 
 .text-section h5 {
   font-family: var(--roboto);
-  font-size: 20px;
+  font-size: 22px;
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -186,6 +186,7 @@
 .text-section p {
   font-family: var(--montserrat);
   font-weight: 400;
+  line-height: 1.4;
   margin-bottom: 20px;
 }
 
@@ -199,6 +200,12 @@
 
 .text-section ul li {
   margin-bottom: 5px;
+}
+
+.code-lines{
+  font-family: var(--roboto) !important;
+  padding-left: 40px;
+  font-style: italic;
 }
 
 /* ----- Textos con una imagen -----*/
@@ -228,6 +235,11 @@
   padding: 40px 60px 0px 60px;
 }
 
+.text-dark-container h2{
+  font-size: 28px;
+  margin-bottom: 40px;
+}
+
 .dark {
   color: var(--cream-color) !important;
 }
@@ -237,8 +249,12 @@
   justify-content: center;
   align-items: center;
   width: 100%;
-  padding: 40px 0px 60px 0px;
+  padding: 10px 0px 20px 0px;
   gap: 5%;
+}
+
+.images-dark-container:last-child {
+  padding: 10px 0px 60px 0px;
 }
 
 .images-dark-container > div{
@@ -252,3 +268,4 @@
   width: 100%;
   height: auto;
 }
+

@@ -15,12 +15,12 @@ class mainHeader extends HTMLElement {
                 <h2>Game Developer</h2>
             </div>
             <div class="language-selector">
-                <span class="language active" id="EN_text">EN</span>
+                <span class="language" id="ES_text">ES</span>
                 <label class="switch">
                     <input type="checkbox" id="cambio-idioma">
                     <span class="slider round"></span>
                 </label>
-                <span class="language" id="ES_text">ES</span>
+                <span class="language active" id="EN_text">EN</span>
             </div>
     </div>
   `

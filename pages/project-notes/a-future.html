@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" searchText-sheet="a-future">
 
 <head>
   <meta charset="UTF-8">
@@ -13,6 +13,8 @@
   <script src="/scripts/translation.js"></script>
   <script src="/scripts/templates/main-header.js"></script>
   <script src="/scripts/templates/side-menu.js"></script>
+  <script src="/scripts/templates/note-col2.js"></script>
+
 </head>
 
 
@@ -60,43 +62,19 @@
 
           <div class="text-dark-container">
             <div class="text-section dark">
-              <h5>Sobre todo</h5>
-              <p>Llegado a cierto punto del juego, tu personaje se mueve solo y adquiere dos comportamientos: Huir y
-                perseguir enemigos. Para esto necesitaba un algoritmo de pathfinding dinámico muy eficiente, que pudiera
-                evaluar la mejor ruta para su objetivo entre cientos de enemigos en movimiento.</p>
-              <p>Para ello implementé un sistema basado en la IA de movimiento de los bots del juego “F1 2011”,
-                explicado en el artículo: Context Steering, Behavior-Driven Steering at the Macro Scale, escrito por
-                Andrew Fray [disponible aquí].
-              </p>
-              <p>Este consiste en la creación de mapas de contextuales, conseguidos al proyectar el personaje en varias
-                direcciones y calculando lo peligrosa o interesante que es dicha posición en base la distancia, ángulos
-                y otros parámetros con respectos a los enemigos cercanos.
-              </p>
+              <h2>Desafios principales</h2>
+              <h5>Pathfinding Dinámico con Context Steering:</h5>
+              <p searchText="future-path-p1">Párrafo 1</p>
+              <p searchText="future-path-p2"></p>
+              <p searchText="future-path-p3"></p>
+              <p searchText="future-path-p4"></p>
               <div class="images-dark-container">
-                <div>
-                  <img src="/img/a-future/run-away.jpg" alt="">
-                </div>
-                <div>
-                  <img src="/img/a-future/chase.jpg" alt="">
-                </div>
+                <div><img src="/img/a-future/run-away.jpg" alt=""></div>
+                <div><img src="/img/a-future/chase.jpg" alt=""></div>
               </div>
-              <p>Desarrollé principalmente dos tipos de comportamientos, huir y perseguir a los enemigos. Estos son
-                fácilmente modificables, y su lógica (similar a la distribución de pesos en un skeleton) tiene la
-                potencialidad de crear otros comportamientos, ya que todo concluye en tres operaciones matemáticas
-                simples, donde puedes cambiar la relevancia de cada variable en el resultado final, o incluso, agregar
-                nuevas variables.
-              </p>
-              <p>contextMap[i] = interestMap[i] - dangerMap[ i ] ; <br>
-                map.dangerDir[i] = (angleWeight * 0.7f) + (distanceWeight * 0.3f);<br>
-                map.interestDir[i] = (angleWeight * 0.7f) + (currentDirectionWeight * 0.3f);
-              </p>
               <div class="images-dark-container">
-                <div>
-                  <img src="/img/a-future/run-away-900.gif" alt="">
-                </div>
-                <div>
-                  <img src="/img/a-future/chase-900.gif" alt="">
-                </div>
+                <div><img src="/img/a-future/run-away-900.gif" alt=""></div>
+                <div><img src="/img/a-future/chase-900.gif" alt=""></div>
               </div>
             </div>
           </div>

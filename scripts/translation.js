@@ -40,7 +40,7 @@ function setLanguage(lang) {
     const key = el.getAttribute('searchText');
     const texto = TRANSLATIONS[lang][key];
     if (texto !== undefined) {
-      el.innerText = texto;
+      el.innerHTML = texto;
     } else {
       console.warn(`Falta traducción para "${key}" en "${lang}"`);
     }
@@ -76,7 +76,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     // Estado inicial basado en el atributo lang del documento
     const currentLang = "EN";
-    languageSwitch.checked = currentLang === 'ES';
+    languageSwitch.checked = currentLang === 'EN';
 
     // Event handler
     languageSwitch.addEventListener('change', function () {

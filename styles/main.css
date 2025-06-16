@@ -33,6 +33,12 @@ ul {
   list-style-type: none;
 }
 
+p > a {
+  color: rgb(125, 125, 209);
+  text-decoration: underline;
+}
+
+
 .titulos,
 .titulos-secundarios {
   font-family: 'Montserrat', sans-serif;
