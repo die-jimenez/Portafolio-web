@@ -26,7 +26,7 @@ class SideMenu extends HTMLElement {
     this._updateActive();
   }
 
-  //Calcula cuantas veces debe retroceder la ruta para hallar la directoria correcta. Asi puedo usar rutas """absolutas"""
+  //Calcula cuantas veces debe retroceder para llegar al root (en local y servidor). Asi puedo usar rutas """absolutas"""
   caluclatePrefix() {
     const isInPages = window.location.pathname.includes('/pages/');
     const isInProjectNotes = window.location.pathname.includes('/project-notes/');
