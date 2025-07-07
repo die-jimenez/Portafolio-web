@@ -1,57 +1,77 @@
 [
   {
-    "key": "",
-    "ES": "",
-    "EN": ""
+    "key": "main-title",
+    "ES": "A future but not for us",
+    "EN": "A future but not for us"
   },
   {
-    "key": "",
-    "ES": "",
-    "EN": ""
+    "key": "play-button",
+    "ES": "Jugar en itchio",
+    "EN": "Play online"
   },
   {
-    "key": "",
-    "ES": "",
-    "EN": ""
+    "key": "sb-1",
+    "ES": "Temática",
+    "EN": "Theme"
   },
   {
-    "key": "",
-    "ES": "",
-    "EN": ""
+    "key": "sb-1-p1",
+    "ES": "A future but not for us\" es un videojuego que explora la intrusión de las inteligencias artificiales en actividades que consideramos divertidas, desde jugar hasta socializar. Se trata de juego narrativo/serious game con una estética cyberpunk que busca rememorar la década de los 80s. El objetivo es sobrevivir a oleadas de robots mientras recibís mejoras, pero tu compañero, un pequeño robots con inteligencia artificial buscara controlar cada vez más a tu personaje. ¿Quien será el último en jugar?",
+    "EN": "A future but not for us\" is a videogame that explores the intrusion of artificial intelligences into activities we consider fun, from gaming to socializing. It's a narrative/serious game with a cyberpunk aesthetic that evokes the 80s. The objective is to survive waves of robots while getting upgrades, but your companion, a small AI powered robot, will increasingly try to control your character. Who will be the last one playing?"
   },
   {
-    "key": "",
-    "ES": "",
-    "EN": ""
+    "key": "sb-2",
+    "ES": "Mi Rol",
+    "EN": "My Rol"
   },
   {
-    "key": "",
-    "ES": "",
-    "EN": ""
+    "key": "sb-2-p1",
+    "ES": "En este proyecto, me encargué del desarrollo técnico como único programador. Estos son los puntos que más destaco en mi trabajo.",
+    "EN": "In this project, I was responsible for the technical development as the only programmer. The following points are the key highlights of my work."
   },
   {
-    "key": "",
-    "ES": "",
-    "EN": ""
+    "key": "sb-2-bullet-1",
+    "ES": "Creación de la IA del personaje principal",
+    "EN": "Creation of the main character's AI"
+  },
+  {
+    "key": "sb-2-bullet-2",
+    "ES": "Programación de las mecánicas de jugabilidad 2D y 3D",
+    "EN": "Programming of gameplay mechanics (2D and 3D)"
+  },
+  {
+    "key": "sb-2-bullet-3",
+    "ES": "Implementación del sistema de diálogos y localización, incluyendo soporte multilenguaje para textos y audios usando archivos csv y json.",
+    "EN": "Implementation of dialogs and localization systems, including a tool for switching texts and audio to multiple languages using CSV and JSON files."
+  },
+  {
+    "key": "sb-2-bullet-4",
+    "ES": "Desarrollo de programación UI (menú principal e interfaz de gameplay)",
+    "EN": "Development of UI programming (main menu and gameplay interface)"
+  },
+  {
+    "key": "future-path-title",
+    "ES": "Pathfinding (Algoritmo de Context Steering):",
+    "EN": "Pathfinding (Context Steering algorithm):"
   },
   {
     "key": "future-path-p1",
     "ES": "En cierta fase del juego, tu personaje se mueve solo y adquiere dos comportamientos: huir y perseguir objetivos entre cientos de enemigos en movimiento. Para ello implementé un sistema basado en el movimiento de los bots del juego \"F1 2011\", explicado en el artículo <strong>Context Steering, Behavior-Driven Steering at the Macro Scale</strong>, escrito por Andrew Fray. <br><a href=\"https://www.gameaipro.com/GameAIPro2/GameAIPro2_Chapter18_Context_Steering_Behavior-Driven_Steering_at_the_Macro_Scale.pdf\" target=\"_blank\">[disponible aquí]</a>",
-    "EN": "About me"
+    "EN": "At a certain point in the game, your character moves on its own and adopts two behaviors: fleeing and chasing targets among hundreds of moving enemies. To achieve this, I implemented a system inspired by the bot movement in the game \"F1 2011\", as explained in the article <strong>Context Steering, Behavior-Driven Steering at the Macro Scale</strong> by Andrew Fray. <br><a href=\"https://www.gameaipro.com/GameAIPro2/GameAIPro2_Chapter18_Context_Steering_Behavior-Driven_Steering_at_the_Macro_Scale.pdf\" target=\"_blank\">[available here]</a>"
   },
   {
     "key": "future-path-p2",
     "ES": "Este consiste en la creación de mapas contextuales, conseguidos al proyectar el personaje en varias direcciones y calculando lo peligrosa o interesante que es dicha posición en base a la distancia, ángulos y otros parámetros con respecto a los enemigos cercanos.",
-    "EN": "Experience"
+    "EN": "It consists of building context maps by projecting the character in different directions and calculating how dangerous or interesting those positions are, based on distance, angles, and other parameters relative to nearby enemies."
   },
   {
     "key": "future-path-p3",
-    "ES": "Desarrollé principalmente dos tipos de comportamientos: huir y perseguir enemigos. Estos son fácilmente modificables, y su lógica (similar a la distribución de pesos en un rigging) tiene la potencialidad de crear otros comportamientos mediante tres operaciones matemáticas simples.",
-    "EN": ""
+    "ES": "Desarrollé principalmente dos tipos de comportamientos: huir y perseguir enemigos. Estos son fácilmente modificables, y su lógica (similar a la distribución de pesos en un rigging) tiene la potencialidad de crear otros comportamientos, que al combinarlos entre sí, generan movimientos muy “naturales”.",
+    "EN": "I mainly developed two types of behaviors: fleeing and chasing enemies. These are easy to modify, and their logic (similar to weight distribution in a 3D rig) has the potential to produce other behaviors. When combined, they can generate very natural movements."
   },
   {
     "key": "future-path-p4",
     "ES": "<strong>Rendimiento:</strong> 0.30-0.65ms por agente mediante cálculos matemáticos puros <strong>(sin raycast)</strong>, recalculando cada 3 frames, permitiendo desplazarse entre cientos de enemigos en movimiento sin impacto en el rendimiento.",
-    "EN": ""
+    "EN": "<strong>Performance:</strong> 0.30-0.65ms per agent through full math calculations <strong>(without raycast)</strong>, recalculating every 3 frames, enabling movement through hundreds of enemies without performance impact."
   }
 ]

@@ -92,6 +92,7 @@
   font-size: 14px;
   color: var(--cream-color);
   user-select: none;
+  line-height: normal;
 }
 
 .mini-gallery-nav-button:hover {

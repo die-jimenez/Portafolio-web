@@ -6,13 +6,13 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Diego Jiménez | Game Developer</title>
   <!-- styles -->
-  <link rel="stylesheet" href="/styles/main.css">
-  <link rel="stylesheet" href="/styles/project-note.css">
+  <link rel="stylesheet" href="../../styles/main.css">
+  <link rel="stylesheet" href="../../styles/components/project-note.css">
   <!-- templates -->
-  <script src="/scripts/translation.js"></script>
-  <script src="/scripts/templates/main-header.js"></script>
-  <script src="/scripts/templates/side-menu.js"></script>
-  <script src="/scripts/images-slider.js"></script>
+  <script src="../../scripts/translation.js"></script>
+  <script src="../../scripts/templates/main-header.js"></script>
+  <script src="../../scripts/templates/side-menu.js"></script>
+  <script src="../../scripts/images-slider.js"></script>
 
 </head>
 
@@ -27,21 +27,25 @@
 
 
     <main class="main-content">
-      <section class="project-section">
+      <!-- Titulo de nota -->
+      <section class="project-section pb-0">
         <div class="project-head">
           <h3 class="titulos padding-top-40">A future but not for us</h3>
         </div>
+
+        <!-- Foto principal -->
         <div class="project-info">
           <div class="main-image" href="">
             <img src="/img/a-future/menu-filter.png" alt="">
             <button>
               <a href="https://die-jimenez.itch.io/a-future-but-not-for-us" target="_blank" class="button-itchio">
-                <span>Jugar en itchio</span>
+                <span searchText="play-button">Jugar en itchio</span>
                 <span class="arrow">›</span>
               </a>
             </button>
           </div>
 
+          <!-- Galeria de fotos -->
           <div class="mini-gallery-container">
             <div class="mini-gallery-wrapper">
               <div class="mini-gallery-track" id="miniGalleryTrack">
@@ -60,8 +64,12 @@
                 <div class="mini-gallery-item">
                   <img src="/img/a-future/img-5.jpg" alt="Imagen 5">
                 </div>
+                <div class="mini-gallery-item">
+                  <img src="/img/a-future/img-6.jpg" alt="Imagen 5">
+                </div>
               </div>
             </div>
+            <!-- Scroll: Barra inferior -->
             <div class="mini-gallery-scrollbar-container">
               <button class="mini-gallery-nav-button" id="miniGalleryPrevBtn">‹</button>
               <div class="mini-gallery-scrollbar-track">
@@ -71,24 +79,27 @@
             </div>
           </div>
 
-
+          <!-- Texto: seccion 1 -->
           <div class="text-section">
-            <div class="text-with-image">
-              <div class="text-content">
-                <h5>Theme</h5>
-                <p>"A future but not for us" is a video game that explores the intrusion of artificial intelligences
-                  into activities we consider fun, from gaming to socializing. The game was developed and originally
-                  showcased as an unconventional arcade installation for an art and technology festival in Argentina,
-                  late 2024.
-                </p>
-                <p>This is a port for PC of the original arcade design, which was specifically created for its own
-                  custom arcade controls.</p>
-              </div>
-
-              <img src="/img/a-future/menu-filter.png" alt="">
-            </div>
+            <h5 searchText="sb-1">Sobre todo</h5>
+            <p searchText="sb-1-p1">parrafo</p>
           </div>
 
+          <!-- Texto: seccion 2 -->
+          <div searchText="sb-2" class="text-section">
+            <h5 searchText="sb-2-p1">Mi rol</h5>
+            <p>Mi rol fue el de Programador Principal en Unity. Conté con el apoyo de dos desarrolladores encargados de
+              los sistemas externos, mientras que yo me ocupé de:</p>
+            <ul>
+              <li searchText="sb-2-bullet-1">Programar todas las mecánicas de juego.</li>
+              <li searchText="sb-2-bullet-2">Diseñar e implementar la interfaz de usuario (UI).</li>
+              <li searchText="sb-2-bullet-3">Integrar el cliente Unity con el backend existente, habilitando el control remoto de la barrera
+                defensiva a través de los dispositivos móviles de los usuarios.</li>
+                <li searchText="sb-2-bullet-4">bullet-4.</li>
+            </ul>
+          </div>
+
+          <!-- Texto: seccion 3 -->
           <div class="text-dark-container">
             <div class="text-section dark">
               <h2>Desafios principales</h2>
@@ -106,18 +117,6 @@
                 <div><img src="/img/a-future/chase-900.gif" alt=""></div>
               </div>
             </div>
-          </div>
-
-          <div class="text-section">
-            <h5>Mi rol</h5>
-            <p>Mi rol fue el de Programador Principal en Unity. Conté con el apoyo de dos desarrolladores encargados de
-              los sistemas externos, mientras que yo me ocupé de:</p>
-            <ul>
-              <li>Programar todas las mecánicas de juego.</li>
-              <li>Diseñar e implementar la interfaz de usuario (UI).</li>
-              <li>Integrar el cliente Unity con el backend existente, habilitando el control remoto de la barrera
-                defensiva a través de los dispositivos móviles de los usuarios.</li>
-            </ul>
           </div>
 
         </div>

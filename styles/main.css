@@ -67,6 +67,10 @@ p > a {
   color: #1B1B1B;
 }
 
+.pb-0 {
+  padding-bottom: 0 !important;
+}
+
 .mb-20 {
   margin-bottom: 20px !important;
 }
