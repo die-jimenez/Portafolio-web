@@ -1,0 +1,37 @@
+[
+  {
+    "key": "title-1",
+    "ES": "Proyectos laborales",
+    "EN": "Professional Projects"
+  },
+  {
+    "key": "defense-title",
+    "ES": "Roots Defense",
+    "EN": "Roots Defense"
+  },
+  {
+    "key": "defense-desc",
+    "ES": "Es un juego multijugador online para 1 a 6 jugadores, desarrollado para web. En mi rol como programador de Unity, me encargué de las mécanicas de juego, la comunicación cliente-servidor, entre otras tareas.",
+    "EN": "It’s an online multiplayer game for 1–6 players, developed for the web. In my role as a Unity developer, I handled the gameplay mechanics, client-server communication, and other tasks."
+  },
+  {
+    "key": "more-details-button",
+    "ES": "Más detalles",
+    "EN": "More details"
+  },
+  {
+    "key": "title-2",
+    "ES": "Personal Projects",
+    "EN": "Personal Projects"
+  },
+  {
+    "key": "a-future-title",
+    "ES": "A future but not for us",
+    "EN": "A future but not for us"
+  },
+  {
+    "key": "a-future-desc",
+    "ES": "Proyecto de graduación (tesis): un juego narrativo con mecánicas de rogue-lite que combina secciones en 2D y 3D. Desarrollado desde cero en Unity y expuesto en una feria de arte a fines de 2024.",
+    "EN": "Graduation project (thesis): A narrative serious game with rogue-lite mechanics, combining 2D and 3D sections. Developed from scratch in Unity, where I was in charge of all technical development as the team’s only programmer."
+  }
+]
