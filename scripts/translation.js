@@ -5,10 +5,26 @@ const COMMON_SHEETS = ['general'];
 const TRANSLATIONS = {};
 
 
+//Calcula cuantas veces debe retroceder para llegar al root (en local y servidor). Asi puedo usar rutas """absolutas"""
+function caluclatePrefix() {
+    const isInPages = window.location.pathname.includes('/pages/');
+    const isInProjectNotes = window.location.pathname.includes('/project-notes/');
+
+    if (isInPages && isInProjectNotes) {
+      return '../../';
+    } else if (isInPages) {
+      return '../';
+    } else {
+      return '';
+    }
+  }
+
+
 
 // 2) Cargamos un JSON específico de una sheet (ej. "homepage", "contact")
 function loadJSONSheet(sheetName) {
-  return fetch(`/data/translation/${sheetName}.json`)
+  const prefix = caluclatePrefix();
+  return fetch(`${prefix}data/translation/${sheetName}.json`)
     .then(res => {
       if (!res.ok) throw new Error(`No se encontró ${sheetName}.json`);
       return res.json();
