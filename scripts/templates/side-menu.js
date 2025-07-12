@@ -14,12 +14,12 @@ class SideMenu extends HTMLElement {
     this.innerHTML = `
           <nav class="side-menu">
             <ul>
-              <li><a href="${prefix}index.html" class="menu-item">Sobre mi</a></li>
-              <li><a href="${prefix}pages/experiencia.html" class="menu-item">Experiencia</a></li>
-              <li><a href="${prefix}pages/portafolio.html" class="menu-item">Portafolio</a></li>
-              <li><a href="${prefix}pages/educacion.html" class="menu-item">Educacion</a></li>
-              <li><a href="${prefix}pages/habilidades.html" class="menu-item">Habilidades</a></li>
-              <li><a href="${prefix}pages/otrosProyectos.html"class="menu-item">Otros proyectos</a></li>
+              <li><a href="${prefix}index.html" class="menu-item" searchText="sidemenu-1">Sobre mi</a></li>
+              <li><a href="${prefix}pages/experiencia.html" class="menu-item" searchText="sidemenu-2">Experiencia</a></li>
+              <li><a href="${prefix}pages/portafolio.html" class="menu-item" searchText="sidemenu-3">Portafolio</a></li>
+              <li><a href="${prefix}pages/educacion.html" class="menu-item" searchText="sidemenu-4">Educacion</a></li>
+              <li><a href="${prefix}pages/habilidades.html" class="menu-item" searchText="sidemenu-5">Habilidades</a></li>
+              <li><a href="${prefix}pages/otrosProyectos.html"class="menu-item" searchText="sidemenu-6">Otros proyectos</a></li>
             </ul>
           </nav>`;
 

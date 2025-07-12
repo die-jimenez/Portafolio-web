@@ -25,7 +25,8 @@
 
 .titulos-secundarios {
   color: var(--cream-color);
-  font-weight: bold
+  font-weight: bold;
+  margin-bottom: 3px;
 }
 
 .subtitulos {

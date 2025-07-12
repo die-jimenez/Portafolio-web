@@ -1,7 +1,32 @@
 [
   {
-    "key": "saludo",
-    "ES": "Hola",
-    "EN": "Hello"
+    "key": "sidemenu-1",
+    "ES": "Sobre mi",
+    "EN": "About me"
+  },
+  {
+    "key": "sidemenu-2",
+    "ES": "Experiencia",
+    "EN": "Experience"
+  },
+  {
+    "key": "sidemenu-3",
+    "ES": "Portafolio",
+    "EN": "Projects"
+  },
+  {
+    "key": "sidemenu-4",
+    "ES": "Educación",
+    "EN": "Education"
+  },
+  {
+    "key": "sidemenu-5",
+    "ES": "Habilidades",
+    "EN": "Skills"
+  },
+  {
+    "key": "sidemenu-6",
+    "ES": "Otros proyectos",
+    "EN": "Side projects"
   }
 ]
