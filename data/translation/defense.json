@@ -1,0 +1,92 @@
+[
+  {
+    "key": "main-title",
+    "ES": "Root defense",
+    "EN": "Root defense"
+  },
+  {
+    "key": "studio",
+    "ES": "Studio Verne",
+    "EN": "Studio Verne"
+  },
+  {
+    "key": "sb-1",
+    "ES": "Temática",
+    "EN": "Theme"
+  },
+  {
+    "key": "sb-1-p1",
+    "ES": "Se trata de un juego multijugador online de entre 1-6 jugadores desarrollado en Unity. Este es ejecutado en computadora o navegador web mediante WebGL, pero es controlado desde el celular de cada jugador. El objetivo de tu equipo es defender las raíces de una planta interceptando a gusanos y parásitos que la amenacen.",
+    "EN": "It’s an online multiplayer game for 1–6 players, developed in Unity from scratch. The game runs on a computer or in a browser using WebGL, but is controlled from each player’s smartphone. Your team’s goal is to defend the roots of a plant by intercepting worms and parasites that threaten it."
+  },
+  {
+    "key": "sb-2",
+    "ES": "Tecnologías",
+    "EN": "Technologies"
+  },
+  {
+    "key": "sb-2-bullet-1",
+    "ES": "Unity | WebGL | C#",
+    "EN": "Unity | WebGL | C#"
+  },
+  {
+    "key": "sb-2-bullet-2",
+    "ES": "Node JS | WebSocket",
+    "EN": "Node JS | WebSocket"
+  },
+  {
+    "key": "sb-2-bullet-3",
+    "ES": "Vue.js | Payload CMS | Js | Sass",
+    "EN": "Vue.js | Payload CMS | Js | Sass"
+  },
+  {
+    "key": "sb-3",
+    "ES": "Mi Rol",
+    "EN": "My Rol"
+  },
+  {
+    "key": "sb-3-p1",
+    "ES": "En este proyecto fui el <b>Programador principal de Unity</b>. Conté con el apoyo de otros dos desarrolladores, quienes se enfocaron principalmente en los sistemas externos al juego, mientras que yo me ocupé de:",
+    "EN": "In this project, I was the <b>main Unity developer</b>. I worked with two other developers who mainly focused on external systems, while I was responsible for:"
+  },
+  {
+    "key": "sb-3-bullet-1",
+    "ES": "Programación y optimización de todas las mecánicas.",
+    "EN": "Programmed and optimized all gameplay mechanics."
+  },
+  {
+    "key": "sb-3-bullet-2",
+    "ES": "Integración de Unity con el backend para la sincronización de jugadores",
+    "EN": "Integration of Unity with the backend for player synchronization"
+  },
+  {
+    "key": "sb-3-bullet-3",
+    "ES": "Implementación de la interfaz de usuario (UI)",
+    "EN": "Designed and developed the user interface (UI)."
+  },
+  {
+    "key": "section-2-title",
+    "ES": "Logros Ténicos",
+    "EN": "Technical Achievements"
+  },
+  {
+    "key": "section-2-sb1",
+    "ES": "Collider dinámicos irregulares:",
+    "EN": "Irregular dynamic colliders:"
+  },
+  {
+    "key": "section-2-sb1-p1",
+    "ES": "Las barreras de cada jugador son el borde de un círculo incompleto, la cual, va creciendo a lo largo de cada partida. Esta es una figura irregular difícil de adaptar y redimensionar usando las formas de los colliders “básicos”. Para resolver esto <b>implemente un algoritmo que genera un collider dinámico</b> que emplea trigonometría para adaptarse a los bordes de cada barrera, sin importar su tamaño o velocidad. Logrando colisiones de gran fidelidad, con muy bajo impacto en el rendimiento.",
+    "EN": "Each player's barrier is the edge of an incomplete circle that expands throughout the match. This irregular shape is challenging to adapt and rescale using \"basic\" collider forms. To solve this, I implemented an algorithm that generates a dynamic collider using trigonometry to precisely match the edges of each barrier, regardless of its size or speed, achieving high-fidelity collisions with minimal performance impact."
+  },
+  {
+    "key": "section-2-sb2",
+    "ES": "Animación procedural:",
+    "EN": "Procedural Animation:"
+  },
+  {
+    "key": "section-2-sb2-p1",
+    "ES": "Reduje en un 50% las animaciones creadas manualmente por los artistas, al generar animaciones procedurales para los dos tipos enemigos del juego, empleando sistemas de partículas y patrones de movimiento basados en las funciones seno y coseno.",
+    "EN": "I reduced manually created artist animations by 50% by implementing procedural animations for both enemy types in the game, using particle systems and sine/cosine-based motion patterns."
+  }
+]

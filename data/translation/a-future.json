@@ -50,6 +50,11 @@
     "EN": "Development of UI programming (main menu and gameplay interface)"
   },
   {
+    "key": "section-2-title",
+    "ES": "Logros Ténicos",
+    "EN": "Technical Achievements"
+  },
+  {
     "key": "future-path-title",
     "ES": "Pathfinding (Algoritmo de Context Steering):",
     "EN": "Pathfinding (Context Steering algorithm):"

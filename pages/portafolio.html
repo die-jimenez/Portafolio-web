@@ -9,9 +9,12 @@
   <link rel="stylesheet" href="../styles/main.css">
   <link rel="stylesheet" href="../styles/portafolio.css">
   <!-- templates -->
-  <script src="../scripts/translation.js"></script>
-  <script src="../scripts/templates/main-header.js"></script>
-  <script src="../scripts/templates/side-menu.js"></script>
+  <script defer src="../scripts/translation.js"></script>
+  <script defer src="../scripts/templates/main-header.js"></script>
+  <script defer src="../scripts/templates/side-menu.js"></script>
+  <script defer src="../scripts/templates/main-footer.js"></script>
+  <!-- iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 <body>
@@ -31,7 +34,8 @@
           </div>
           <div class="project-card-content">
             <h3 searchText="defense-title">Defense Roots</h3>
-            <p searchText="defense-desc">Es un juego multijugador online para 1 a 6 jugadores, desarrollado para web y exhibido en ferias
+            <p searchText="defense-desc">Es un juego multijugador online para 1 a 6 jugadores, desarrollado para web y
+              exhibido en ferias
               corporativas internacionales. Fui el programador en Unity, encargado del gameplay, la comunicación
               cliente-servidor y entre otros.
             </p>
@@ -65,10 +69,7 @@
   </section>
 
   <footer>
-    <div class="footer-container">
-      <div class="email">Diegojimenez2010@gmail.com</div>
-      <div class="location">La Plata, Buenos Aires, Argentina</div>
-    </div>
+    <main-footer></main-footer>
   </footer>
 </body>
 

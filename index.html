@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" searchText-sheet="home">
 
 <head>
     <meta charset="UTF-8">
@@ -9,9 +9,12 @@
     <link rel="stylesheet" href="styles/main.css">
     <link rel="stylesheet" href="styles/about.css">
     <!-- templates -->
-    <script src="scripts/translation.js"></script>
-    <script src="scripts/templates/main-header.js"></script>
-    <script src="scripts/templates/side-menu.js"></script>
+    <script defer src="scripts/translation.js"></script>
+    <script defer src="scripts/templates/main-header.js"></script>
+    <script defer src="scripts/templates/side-menu.js"></script>
+    <script defer src="scripts/templates/main-footer.js"></script>
+    <!-- iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 
@@ -30,18 +33,36 @@
                         <img src="data/img/me.jpg" alt="Photo of Diego Jiménez">
                     </div>
                     <div class="profile-info">
-                        <h3 searchText="saludo">Hello! I'm Die</h3>
-                        <p>
+                        <h3 searchText="title">Hello! I'm Die</h3>
+                        <p searchText="p1">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Donec vel egestas dolor, nec dignissim metus. Donec
                             augue elit, rhoncus ac sodales id, porttitor vitae est.
                             Donec laoreet rutrum libero sed pharetra.
                         </p>
-                        <p>
+                        <p searchText="p2">
                             Lorem ipsum dolor sit amet, consectetur adipiscing elit.
                             Donec vel egestas dolor, nec dignissim metus. Donec
                             augue elit, rhoncus ac sodales id, porttitor
                         </p>
+                        <p searchText="p3">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                        <ul>
+                            <li>
+                                <i class="fa-solid fa-square-envelope"></i>
+                                <a href="mailto:diegojimenez2010@gmail.com" target="_blank" searchText="mail"></a>
+                            </li>
+                            <li>
+                                <i class="fa-brands fa-linkedin"></i>
+                                <a href="https://www.linkedin.com/in/die-jimenez" target="_blank"
+                                    searchText="linkedin"></a>
+                            </li>
+                            <li>
+                                <i class="fa-solid fa-square-phone"></i>
+                                <span searchText="phone"></span>
+                            </li>
+                        </ul>
                     </div>
                 </div>
             </section>
@@ -49,10 +70,7 @@
     </section>
 
     <footer>
-        <div class="footer-container">
-            <div class="email">Diegojimenez2010@gmail.com</div>
-            <div class="location">La Plata, Buenos Aires, Argentina</div>
-        </div>
+        <main-footer></main-footer>
     </footer>
 </body>
 

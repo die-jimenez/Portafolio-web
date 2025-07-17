@@ -28,5 +28,4 @@ class mainHeader extends HTMLElement {
 
 }
 
-
 window.customElements.define('main-header', mainHeader);

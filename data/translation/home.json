@@ -1,0 +1,22 @@
+[
+  {
+    "key": "title",
+    "ES": "Hola, soy Diego",
+    "EN": "Hi, I'm Diego"
+  },
+  {
+    "key": "p1",
+    "ES": "Soy programador de videojuegos con dos años de experiencia desarrollando en Unity. Además, soy Licenciado en Diseño Multimedial, formación que me ayuda a comunicarme con distintas ramas del equipo: arte, diseño, sonido, producción.",
+    "EN": "I'm a game programmer with two years of experience developing in Unity. I hold a Bachelor's Degree in Multimedia Design, a background that helps me communicate with different areas of the team: art, design, sound, production."
+  },
+  {
+    "key": "p2",
+    "ES": "Más allá del desarrollo de videojuegos, soy ayudante de cátedra de “Fundamentos de la Programación” en la UNLP, mientras que en mi tiempo libre, exploró el mundo de la electrónica y robótica en proyectos personales.",
+    "EN": "Beyond game development, I'm a teaching assistant for “Programming Fundamentals” at the National University of La Plata (UNLP), and in my free time, I explore the world of electronics and robotics through personal projects."
+  },
+  {
+    "key": "p3",
+    "ES": "Si te interesa mi perfil, ¡hablemos!",
+    "EN": "If you are interested in my profile, let's talk!"
+  }
+]

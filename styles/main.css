@@ -71,6 +71,14 @@ p > a {
   padding-bottom: 0 !important;
 }
 
+.pb-40 {
+  padding-bottom: 40px !important;
+}
+
+.mb-0 {
+  margin-bottom: 0px !important;
+}
+
 .mb-20 {
   margin-bottom: 20px !important;
 }
@@ -257,10 +265,6 @@ side-menu { /*---COMPONENTE---*/
   height: 4px;
 }
 
-.side-menu ul li:last-child {
-  /*margin-top: auto;*/
-}
-
 .menu-item:hover {
   font-size: 24px;
   font-weight: 700;
@@ -289,6 +293,22 @@ footer {
   display: flex;
   justify-content: space-between;
 }
+
+.footer-container .info{
+  display: flex;
+  gap: 1rem;
+}
+
+.footer-container .info i {
+  font-size: 20px;
+  margin-right: -5px;
+  vertical-align: middle;
+}
+
+.footer-container .info a {
+  text-decoration: underline;
+}
+
 
 /* ----- En desarrollo ----- */
 .no-developed{

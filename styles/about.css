@@ -51,13 +51,38 @@
 }
 
 .profile-info p {
-  font-family: var(--roboto);
-  font-size: 1.2rem;
+  font-family: var(--montserrat);
+  font-size: 16px;
   font-weight: 400;
   line-height: 1.5;
   margin-bottom: 1.5rem;
   color: var(--dark-color);
 }
+
+.profile-info p:last-of-type {
+  margin-bottom: 5px;
+}
+
+.profile-info li {
+  font-family: var(--montserrat);
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--dark-color);
+  margin-bottom: 5px;
+}
+
+.profile-info a {
+  text-decoration: underline;
+}
+
+.profile-info i {
+  font-size: 20px;
+  color: var(--dark-color);
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+
 
 /* Responsive */
 @media (max-width: 768px) {

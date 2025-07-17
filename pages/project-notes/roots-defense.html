@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="es" searchText-sheet="defense">
 
 <head>
   <meta charset="UTF-8">
@@ -9,9 +9,12 @@
   <link rel="stylesheet" href="../../styles/main.css">
   <link rel="stylesheet" href="../../styles/components/project-note.css">
   <!-- templates -->
-    <script src="../../scripts/translation.js"></script>
-    <script src="../../scripts/templates/main-header.js"></script>
-    <script src="../../scripts/templates/side-menu.js"></script>
+  <script defer src="../../scripts/translation.js"></script>
+  <script defer src="../../scripts/templates/main-header.js"></script>
+  <script defer src="../../scripts/templates/side-menu.js"></script>
+  <script defer src="../../scripts/templates/main-footer.js"></script>
+  <!-- iconos -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 </head>
 
 
@@ -24,7 +27,7 @@
     <side-menu active="3"></side-menu>
 
     <main class="main-content">
-      <section class="project-section">
+      <section class="project-section pb-0">
         <div class="project-head">
           <h3 class="titulos-secundarios padding-top-25">Roots-defense</h3>
           <p class="subtitulos">Studio Verne</p>
@@ -38,43 +41,52 @@
             <iframe class="video-iframe" data-src="https://www.youtube.com/embed/UPetdaUQQxk?autoplay=1&vq=hd1080"
               title="YouTube video player" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
           </div>
-          
+
+          <!-- Texto: seccion 1 -->
           <div class="text-section">
-            <h5>Sobre todo</h5>
-            <p>Desarrollado en Studio Verne, Defensa Radicular es un videojuego multijugador diseñado para ferias
-              empresariales internacionales. Se expuso en Barcelona (España) y Singapur, convirtiéndose en el título más
-              exitoso de la empresa hasta ese momento. De 1 a 6 jugadores participan desde sus dispositivos móviles para
-              controlar una barrera defensiva y proteger las raíces de una planta frente a gusanos, parásitos y otras
-              amenazas.</p>
-            <p>Desarrollado en Studio Verne, Defensa Radicular es un videojuego multijugador diseñado para ferias
-              empresariales internacionales. Se expuso en Barcelona (España) y Singapur, convirtiéndose en el título más
-              exitoso de la empresa hasta ese momento. De 1 a 6 jugadores participan desde sus dispositivos móviles para
-              controlar una barrera defensiva y proteger las raíces de una planta frente a gusanos, parásitos y otras
-              amenazas.</p>
+            <h5 searchText="sb-1">Temática</h5>
+            <p searchText="sb-1-p1">Se trata de un juego multijugador online de entre 1-6 jugadores desarrollado en
+              Unity. Este es ejecutado
+              en computadora o navegador web mediante WebGL, pero es controlado desde el celular de cada jugador. El
+              objetivo de tu equipo es defender las raíces de una planta interceptando a gusanos y parásitos que la
+              amenacen.
+            </p>
           </div>
 
+          <!-- Texto: seccion 2 -->
           <div class="text-section">
-            <h5>Mi rol</h5>
-            <p>Mi rol fue el de Programador Principal en Unity. Conté con el apoyo de dos desarrolladores encargados de
-              los sistemas externos, mientras que yo me ocupé de:</p>
+            <h5 class="mb-20" searchText="sb-3">Logros técnicos</h5>
             <ul>
-              <li>Programar todas las mecánicas de juego.</li>
-              <li>Diseñar e implementar la interfaz de usuario (UI).</li>
-              <li>Integrar el cliente Unity con el backend existente, habilitando el control remoto de la barrera
-                defensiva a través de los dispositivos móviles de los usuarios.</li>
+              <li searchText="sb-3-bullet-1">Bullet-1</li>
+              <li searchText="sb-3-bullet-2">Bullet-2</li>
+              <li searchText="sb-3-bullet-3">Bullet-3</li>
             </ul>
           </div>
 
+          <!-- Texto: seccion 3 -->
           <div class="text-section">
-            <h5 class="mb-20">Logros y desafíos técnicos</h5>
+            <h5 class="mb-20" searchText="sb-2">Mi rol</h5>
             <ul>
-              <li>Programar todas las mecánicas de juego.</li>
-              <li>Diseñar e implementar la interfaz de usuario (UI).</li>
-              <li>Integrar el cliente Unity con el backend existente, habilitando el control remoto de la barrera
-                defensiva a través de los dispositivos móviles de los usuarios.</li>
+              <li searchText="sb-2-bullet-1">Bullet-1</li>
+              <li searchText="sb-2-bullet-2">Bullet-2</li>
+              <li searchText="sb-2-bullet-3">Bullet-3</li>
             </ul>
           </div>
 
+          <!-- Texto: seccion 4 -->
+          <div class="text-dark-container pb-40">
+            <div class="text-section dark">
+              <h2 searchText="section-2-title">Logros Ténicos</h2>
+              <!-- Texto: seccion 4.1 -->
+              <h5 searchText="section-2-sb1">Collider dinámicos irregulares:</h5>
+              <p searchText="section-2-sb1-p1">Párrafo 1</p>
+              <!-- Texto: seccion 4.2 -->
+              <h5 searchText="section-2-sb2">Collider dinámicos irregulares:</h5>
+              <p searchText="section-2-sb2-p1">Párrafo 1</p>
+
+              
+            </div>
+          </div>
 
         </div>
       </section>
@@ -82,10 +94,7 @@
   </section>
 
   <footer>
-    <div class="footer-container">
-      <div class="email">Diegojimenez2010@gmail.com</div>
-      <div class="location">La Plata, Buenos Aires, Argentina</div>
-    </div>
+    <main-footer></main-footer>
   </footer>
 </body>
 

@@ -11,6 +11,7 @@ class SideMenu extends HTMLElement {
   connectedCallback() {
     const prefix = this.caluclatePrefix();
 
+    //Skill/habilidades esta invisible
     this.innerHTML = `
           <nav class="side-menu">
             <ul>
@@ -18,8 +19,8 @@ class SideMenu extends HTMLElement {
               <li><a href="${prefix}pages/experiencia.html" class="menu-item" searchText="sidemenu-2">Experiencia</a></li>
               <li><a href="${prefix}pages/portafolio.html" class="menu-item" searchText="sidemenu-3">Portafolio</a></li>
               <li><a href="${prefix}pages/educacion.html" class="menu-item" searchText="sidemenu-4">Educacion</a></li>
-              <li><a href="${prefix}pages/habilidades.html" class="menu-item" searchText="sidemenu-5">Habilidades</a></li>
-              <li><a href="${prefix}pages/otrosProyectos.html"class="menu-item" searchText="sidemenu-6">Otros proyectos</a></li>
+              <li style="display:none"><a href="${prefix}pages/habilidades.html" class="menu-item" searchText="sidemenu-5">Habilidades</a></li>
+              <li><a href="${prefix}pages/otros-proyectos.html"class="menu-item" searchText="sidemenu-6">Otros proyectos</a></li>
             </ul>
           </nav>`;
 
