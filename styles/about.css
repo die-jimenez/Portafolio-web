@@ -63,7 +63,7 @@
   margin-bottom: 5px;
 }
 
-.profile-info li {
+.profile-info ul li {
   font-family: var(--montserrat);
   font-size: 14px;
   font-weight: 400;
@@ -71,11 +71,11 @@
   margin-bottom: 5px;
 }
 
-.profile-info a {
+.profile-info ul li a {
   text-decoration: underline;
 }
 
-.profile-info i {
+.profile-info ul li i {
   font-size: 20px;
   color: var(--dark-color);
   margin-right: 10px;
