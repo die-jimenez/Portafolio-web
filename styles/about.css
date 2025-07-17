@@ -73,6 +73,7 @@
 
 .profile-info ul li a {
   text-decoration: underline;
+  color: var(--dark-color);
 }
 
 .profile-info ul li i {

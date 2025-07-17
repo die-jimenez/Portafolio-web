@@ -4,24 +4,21 @@ const COMMON_SHEETS = ['general'];
 // Variable global donde guardamos todas las traducciones
 const TRANSLATIONS = {};
 
-
-//Calcula cuantas veces debe retroceder para llegar al root (en local y servidor). Asi puedo usar rutas """absolutas"""
+// Calcula cuántas veces debe retroceder para llegar al root
 function caluclatePrefix() {
-    const isInPages = window.location.pathname.includes('/pages/');
-    const isInProjectNotes = window.location.pathname.includes('/project-notes/');
+  const isInPages = window.location.pathname.includes('/pages/');
+  const isInProjectNotes = window.location.pathname.includes('/project-notes/');
 
-    if (isInPages && isInProjectNotes) {
-      return '../../';
-    } else if (isInPages) {
-      return '../';
-    } else {
-      return '';
-    }
+  if (isInPages && isInProjectNotes) {
+    return '../../';
+  } else if (isInPages) {
+    return '../';
+  } else {
+    return '';
   }
+}
 
-
-
-// 2) Cargamos un JSON específico de una sheet (ej. "homepage", "contact")
+// 2) Cargamos un JSON específico de una sheet
 function loadJSONSheet(sheetName) {
   const prefix = caluclatePrefix();
   return fetch(`${prefix}data/translation/${sheetName}.json`)
@@ -31,10 +28,9 @@ function loadJSONSheet(sheetName) {
     });
 }
 
-// 3) Pasamos de un arreglo [{key,EN,ES,..},...] a TRANSLATIONS[lang][key]
+// 3) Convertimos el array de objetos a TRANSLATIONS[lang][key]
 function addToTranslations(dataArray) {
   dataArray.forEach(item => {
-    // item = { key: "hp_title", EN: "...", ES: "...", ... }
     const key = item.key;
     Object.keys(item).forEach(lang => {
       if (lang === 'key') return;
@@ -44,14 +40,13 @@ function addToTranslations(dataArray) {
   });
 }
 
-
-
-// 5) Función para aplicar el idioma 'lang' al DOM
+// 4) Función para aplicar el idioma seleccionado al DOM
 function setLanguage(lang) {
   if (!TRANSLATIONS[lang]) {
     console.warn(`Idioma "${lang}" no encontrado.`);
     return;
   }
+
   document.querySelectorAll('[searchText]').forEach(el => {
     const key = el.getAttribute('searchText');
     const texto = TRANSLATIONS[lang][key];
@@ -63,12 +58,13 @@ function setLanguage(lang) {
   });
 }
 
+// 5) Iniciamos después de cargar el DOM
 document.addEventListener('DOMContentLoaded', () => {
-  // 1. Cargar las traducciones primero
+
+  // Cargar las traducciones
   function loadTranslations() {
     let sheetSpecific = document.documentElement.getAttribute('searchText-sheet') ||
-      document.body.getAttribute('searchText-sheet') ||
-      null;
+      document.body.getAttribute('searchText-sheet') || null;
 
     const toLoad = [...COMMON_SHEETS];
     if (sheetSpecific) toLoad.push(sheetSpecific);
@@ -76,50 +72,52 @@ document.addEventListener('DOMContentLoaded', () => {
     return Promise.all(toLoad.map(loadJSONSheet))
       .then(results => {
         results.forEach(addToTranslations);
-        return true; // Indicar que las traducciones están listas
+        return true;
       });
-  };
+  }
 
-  // 2. Configurar el sistema de idiomas después de cargar traducciones
-  function setupLanguageSystem() {
+  // Configurar el cambio de idioma
+  function setupLanguageSystem(currentLang) {
     const languageSwitch = document.getElementById('cambio-idioma');
 
-    // Verificar si existe el elemento
     if (!languageSwitch) {
       console.error('Elemento #cambio-idioma no encontrado');
       return;
     }
 
-    // Estado inicial basado en el atributo lang del documento
-    const currentLang = "EN";
     languageSwitch.checked = currentLang === 'EN';
 
-    // Event handler
     languageSwitch.addEventListener('change', function () {
       const newLang = this.checked ? 'EN' : 'ES';
       setLanguage(newLang);
-      //toggle elimina la clase si ya la tiene, y la agrega sino la tiene
-      document.getElementById('EN_text').classList.toggle("active");
-      document.getElementById('ES_text').classList.toggle("active");
+      if (newLang === 'EN') {
+        document.getElementById('EN_text')?.classList.add("active");
+        document.getElementById('ES_text')?.classList.remove("active");
+      } else {
+        document.getElementById('ES_text')?.classList.add("active");
+        document.getElementById('EN_text')?.classList.remove("active");
+      }
       document.documentElement.setAttribute('lang', newLang);
+      localStorage.setItem('language', newLang); // Guardar idioma
     });
-  };
+  }
 
-  // 3. Secuencia correcta: primero cargar traducciones, luego configurar switch
+  // Secuencia: cargar traducciones > idioma inicial > configurar switch
   loadTranslations()
     .then(() => {
-      // Establecer idioma inicial
-      const defaultLang = 'EN';
-      setLanguage(defaultLang);
-      document.documentElement.setAttribute('lang', defaultLang);
-
-      // Ahora configurar el switch
-      setupLanguageSystem();
+      const savedLang = localStorage.getItem('language') || 'EN';
+      setLanguage(savedLang);
+      document.documentElement.setAttribute('lang', savedLang);
+      if (savedLang === 'EN') {
+        document.getElementById('EN_text')?.classList.add("active");
+        document.getElementById('ES_text')?.classList.remove("active");
+      } else {
+        document.getElementById('ES_text')?.classList.add("active");
+        document.getElementById('EN_text')?.classList.remove("active");
+      }
+      setupLanguageSystem(savedLang);
     })
     .catch(err => {
       console.error('Error cargando traducciones:', err);
     });
 });
-
-
-
