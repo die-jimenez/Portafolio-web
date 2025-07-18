@@ -34,7 +34,7 @@ ul {
   list-style-type: none;
 }
 
-p > a {
+p>a {
   color: rgb(125, 125, 209);
   text-decoration: underline;
 }
@@ -93,20 +93,18 @@ p > a {
 
 
 /* Maximum width containers */
-
 .content {
-  min-width: 800px;
+  min-width: 600px;
   max-width: 1400px;
-  margin: 0 auto 0 9%;
+  margin: 70px auto 90px auto;
   width: 85%;
 }
 
 .header-container,
 .footer-container {
-  min-width: 800px;
   max-width: 1500px;
-  margin: 0 auto 0 9%;
-  width: 100%;
+  margin: 0 auto;
+  padding: 0 60px;
 }
 
 /* Header */
@@ -151,7 +149,6 @@ header {
   display: flex;
   align-items: center;
   gap: 0.5rem;
-  margin-right: 60px;
 }
 
 .language {
@@ -214,12 +211,11 @@ input:checked+.slider:before {
 .content {
   display: flex;
   justify-content: center;
-  margin-top: 70px;
-  margin-bottom: 90px;
 }
 
 /* Side menu */
-side-menu { /*---COMPONENTE---*/
+side-menu {
+  /*---COMPONENTE: NO CAMBIAR---*/
   width: 20%;
 }
 
@@ -227,13 +223,15 @@ side-menu { /*---COMPONENTE---*/
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  min-width: 160px;
 }
 
 .side-menu ul {
   display: flex;
   flex-direction: column;
   gap: 1.5rem;
-  flex-grow: 1; /* Nuevo - clave para el funcionamiento */
+  flex-grow: 1;
+  /* Nuevo - clave para el funcionamiento */
 }
 
 .menu-item {
@@ -294,9 +292,13 @@ footer {
   justify-content: space-between;
 }
 
-.footer-container .info{
+.footer-container .info {
   display: flex;
   gap: 1rem;
+}
+
+.footer-container .info:last-of-type {
+  margin-right: 60px;
 }
 
 .footer-container .info i {
@@ -311,30 +313,53 @@ footer {
 
 
 /* ----- En desarrollo ----- */
-.no-developed{
+.no-developed {
   color: var(--dark-color);
   padding: 40px;
+  border: 5px solid var(--dark-color);
 }
-.no-developed h4{
+
+.no-developed h4 {
   font-family: var(--roboto);
   font-size: 90px;
   font-weight: bold;
 }
 
-.no-developed p{
+.no-developed p {
   font-family: var(--montserrat);
   font-size: 36px;
   font-weight: 400;
 }
 
-@media (max-width: 1600px) {
+@media (max-width: 1280px) {
 
-  .header-container {
-    max-width: 1400px;
+  .header-container,
+  .footer-container {
+    padding: 0 40px;
   }
 
-  .language-selector {
-    margin-right: 0px;
+  .content {
+    margin-left: 40px;
+    width: 90%;
+    gap: 40px;
   }
+
+  .side-menu ul {
+    gap: 1rem;
+  }
+
+  .menu-item {
+    font-size: 16px;
+  }
+
+  .menu-item.active {
+    font-size: 18px;
+  }
+
+  .main-content {
+    min-width: 300px;
+  }
+
+
+
 }
-

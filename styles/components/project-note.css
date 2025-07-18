@@ -92,9 +92,7 @@
   position: relative;  
   width: 100%;             
   padding-top: 56.25%;      
-  overflow: hidden;
-  min-width: 640px;        
-  min-height: 360px;        
+  overflow: hidden;   
   margin-bottom: 40px;
 }
 
@@ -269,5 +267,24 @@
 .images-dark-container img {
   width: 100%;
   height: auto;
+  min-width: 255px;
 }
 
+@media (max-width: 1024px) {
+  .project-head,
+  .project-info {
+    padding: 0 40px;
+  }
+
+  .text-dark-container {
+    margin: 40px -40px 0 -40px;
+    padding: 40px 40px 0px 40px;
+  }
+
+  .images-dark-container {
+  flex-wrap: wrap;
+  gap:20px;
+  padding-bottom: 10px;
+
+  }
+}
