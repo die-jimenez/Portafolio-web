@@ -298,7 +298,7 @@ footer {
 }
 
 .footer-container .info:last-of-type {
-  margin-right: 60px;
+  /*margin-right: 60px;*/
 }
 
 .footer-container .info i {
