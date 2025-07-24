@@ -56,8 +56,8 @@
   },
   {
     "key": "sb-3-bullet-2",
-    "ES": "Integración de Unity con el backend para la sincronización de jugadores",
-    "EN": "Integration of Unity with the backend for player synchronization"
+    "ES": "Desarrollé la comunicación entre clientes (Unity) y servidor para juegos multijugador de entre 2 a 6 jugadores utilizando WebSocket",
+    "EN": "Built networking between clients (Unity) and server for 2-6 player games with WebSocket"
   },
   {
     "key": "sb-3-bullet-3",

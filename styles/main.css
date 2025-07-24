@@ -296,10 +296,11 @@ footer {
   display: flex;
   gap: 1rem;
 }
-
+/*
 .footer-container .info:last-of-type {
-  /*margin-right: 60px;*/
+  margin-right: 60px;
 }
+*/
 
 .footer-container .info i {
   font-size: 20px;
