@@ -9,7 +9,7 @@ class SideMenu extends HTMLElement {
   }
 
   connectedCallback() {
-    const prefix = this.caluclatePrefix();
+    const prefix = calculatePrefix();
 
     //Skill/habilidades esta invisible
     this.innerHTML = `
@@ -24,41 +24,46 @@ class SideMenu extends HTMLElement {
             </ul>
           </nav>`;
 
-    this._updateActive();
+    updateActive(this);
   }
 
-  //Calcula cuantas veces debe retroceder para llegar al root (en local y servidor). Asi puedo usar rutas """absolutas"""
-  caluclatePrefix() {
-    const isInPages = window.location.pathname.includes('/pages/');
-    const isInProjectNotes = window.location.pathname.includes('/project-notes/');
 
-    if (isInPages && isInProjectNotes) {
-      return '../../';
-    } else if (isInPages) {
-      return '../';
-    } else {
-      return '';
-    }
-  }
 
   //Es una especie de listener por si algún js cambia el atributo 'active'
   attributeChangedCallback(name, oldVal, newVal) {
     if (name === 'active' && oldVal !== newVal) {
-      this._updateActive();
-    }
-  }
-
-  _updateActive() {
-    // quitamos active de todas las opciones
-    const options = this.querySelectorAll('a.menu-item');
-    options.forEach(a => a.classList.remove('active'));
-
-    // marcamos la que corresponde (1‑based)
-    const i = parseInt(this.getAttribute('active'), 10);
-    if (!isNaN(i) && i >= 0 && i <= options.length) {
-      options[i - 1].classList.add('active');
+      updateActive(this);
     }
   }
 }
-
 customElements.define('side-menu', SideMenu);
+
+
+
+
+//Calcula cuantas veces debe retroceder para llegar al root (en local y servidor). Asi puedo usar rutas """absolutas"""
+export function calculatePrefix() {
+  const isInPages = window.location.pathname.includes('/pages/');
+  const isInProjectNotes = window.location.pathname.includes('/project-notes/');
+
+  if (isInPages && isInProjectNotes) {
+    return '../../';
+  } else if (isInPages) {
+    return '../';
+  } else {
+    return '';
+  }
+}
+
+export function updateActive(elements) {
+  // quitamos active de todas las opciones
+  const options = elements.querySelectorAll('a.menu-item');
+  options.forEach(a => a.classList.remove('active'));
+
+  // marcamos la que corresponde (1‑based)
+  const i = parseInt(elements.getAttribute('active'), 10);
+  if (!isNaN(i) && i >= 0 && i <= options.length) {
+    options[i - 1].classList.add('active');
+  }
+}
+

@@ -91,7 +91,7 @@
     display: none;
   }
 
-  
+
   .profile-info {
     padding: 3rem 3rem;
   }
@@ -112,4 +112,16 @@
   }
 
 
+}
+
+
+@media (max-width: 660px) {
+  .profile-info {
+    padding: 32px;
+  }
+
+  .profile-info h3 {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+  }
 }
