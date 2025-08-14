@@ -56,43 +56,8 @@
 
 .project-card-content button {
   margin-top: 20px;
-  background-color: transparent;
-  color: var(--dark-color);
   border: none;
 }
-
-.more-details {
-  display: inline-flex;
-  justify-content: space-between;
-  align-items: center;
-  background-color: #1B1B1B;
-  color: #FBF5EB;
-  width: 150px;
-  height: 35px;
-
-  font-family: 'Montserrat', sans-serif;
-  text-decoration: none;
-  font-weight: 700;
-  padding: 0 20px;
-  font-size: 14px;
-  border-radius: 3px;
-  transition: background-color 0.2s ease;
-
-}
-
-.more-details .arrow {
-  font-size: 24px;
-  font-weight: 400;
-  margin-left: 8px;
-  display: inline-block;
-  transform: translateY(-2px);
-}
-
-.more-details:hover {
-  background-color: #4e4e4e;
-  /* ligero cambio al hacer hover */
-}
-
 
 @media (max-width: 1400px) {
   .project-card-content {

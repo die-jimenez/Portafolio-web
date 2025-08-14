@@ -18,5 +18,10 @@
     "key": "p3",
     "ES": "Si te interesa mi perfil, ¡hablemos!",
     "EN": "If you are interested in my profile, let's talk!"
+  },
+  {
+    "key": "button-projects",
+    "ES": "Ver proyectos",
+    "EN": "View projects"
   }
 ]
