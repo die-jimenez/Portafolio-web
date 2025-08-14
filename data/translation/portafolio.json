@@ -33,5 +33,15 @@
     "key": "a-future-desc",
     "ES": "Proyecto de graduación (tesis): un juego narrativo con mecánicas de rogue-lite que combina secciones en 2D y 3D. Desarrollado desde cero en Unity y expuesto en una feria de arte a fines de 2024.",
     "EN": "Graduation project (thesis): A narrative serious game with rogue-lite mechanics, combining 2D and 3D sections. Developed from scratch in Unity, where I was in charge of all technical development as the team’s only programmer."
+  },
+  {
+    "key": "peep-title",
+    "ES": "Peep",
+    "EN": "Peep"
+  },
+  {
+    "key": "peep-desc",
+    "ES": "Es un juego basado en físicas hecho java, sin ningun motor de videojuegos. Como único programador del proyecto, me encargué de implementar la camara, el manejo de físicas, colisiones, animaciones e inclusive el diseño del nivel.",
+    "EN": "It’s a physics-based game built in Java, without any game engine. As the sole programmer on the project, I implemented the camera, physics, collisions, animations, and even the level design."
   }
 ]

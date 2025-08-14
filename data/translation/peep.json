@@ -1,0 +1,132 @@
+[
+  {
+    "key": "main-title",
+    "ES": "Peep",
+    "EN": "Peep"
+  },
+  {
+    "key": "play-button",
+    "ES": "",
+    "EN": "Play online"
+  },
+  {
+    "key": "sb-1",
+    "ES": "Temática",
+    "EN": "Theme"
+  },
+  {
+    "key": "sb-1-p1",
+    "ES": "Un rage game accesible, desarrollado íntegramente en Java sin utilizar motores de videojuegos. Inspirado en <i>\"Getting Over It\"</i> y <i>Angry Birds</i>, pone al jugador en control de un gran árbol que debe ayudar a Peep, una pequeña ave que cayó del nido. Para lograrlo, deberá catapultarla entre sus ramas hasta llevarla de regreso con su familia. ¿Podrás ayudar al pequeño Peep?",
+    "EN": "An accessible rage game, developed entirely in Java without using any game engine. Inspired by <i>“Getting Over It”</i> and <i>Angry Birds</i>, it puts the player in control of a great tree that must help Peep, a small bird that fell from its nest. To do so, the player must catapult her between its branches until she’s reunited with her family. Do you have what it takes to help little Peep?"
+  },
+  {
+    "key": "sb-2",
+    "ES": "Mi Rol",
+    "EN": "My Role"
+  },
+  {
+    "key": "sb-2-p1",
+    "ES": "En esta oportunidad, me encargué de toda la programación, ádemas del game design. Sin embargo,  solo me centraré en describir mi rol como programador.",
+    "EN": "In this project, I was in charge of all the programming as well as the game design. However, I will focus only on describing my role as a programmer."
+  },
+  {
+    "key": "sb-2-bullet-1",
+    "ES": "Construcción y control de cámara.",
+    "EN": "Camera construction and control."
+  },
+  {
+    "key": "sb-2-bullet-2",
+    "ES": "Implementación de físicas y colisiones con la librería \"fisica\".",
+    "EN": "Implementation of physics and collisions using the \"física\" library."
+  },
+  {
+    "key": "sb-2-bullet-3",
+    "ES": "Programación de animaciones y sistemas de partículas.",
+    "EN": "Programming of animations and particle systems."
+  },
+  {
+    "key": "sb-2-bullet-4",
+    "ES": "Desarrollo de mecánicas de juego.",
+    "EN": "Development of game mechanics."
+  },
+  {
+    "key": "sb-2-bullet-5",
+    "ES": "Programación general del proyecto.",
+    "EN": "General project programming."
+  },
+  {
+    "key": "section-2-title",
+    "ES": "Logros Ténicos",
+    "EN": "Technical Achievements"
+  },
+  {
+    "key": "future-path-title",
+    "ES": "Pathfinding (Algoritmo de Context Steering):",
+    "EN": "Pathfinding (Context Steering algorithm):"
+  },
+  {
+    "key": "future-path-p1",
+    "ES": "",
+    "EN": ""
+  },
+  {
+    "key": "future-path-p2",
+    "ES": "",
+    "EN": ""
+  },
+  {
+    "key": "future-path-p3",
+    "ES": "",
+    "EN": ""
+  },
+  {
+    "key": "future-path-p4",
+    "ES": "",
+    "EN": ""
+  },
+  {
+    "key": "",
+    "ES": "",
+    "EN": "no translation"
+  },
+  {
+    "key": "",
+    "ES": "",
+    "EN": "no translation"
+  },
+  {
+    "key": "",
+    "ES": "",
+    "EN": "no translation"
+  },
+  {
+    "key": "",
+    "ES": "",
+    "EN": "no translation"
+  },
+  {
+    "key": "",
+    "ES": "",
+    "EN": "no translation"
+  },
+  {
+    "key": "",
+    "ES": "",
+    "EN": "no translation"
+  },
+  {
+    "key": "",
+    "ES": "",
+    "EN": "no translation"
+  },
+  {
+    "key": "",
+    "ES": "",
+    "EN": "no translation"
+  },
+  {
+    "key": "",
+    "ES": "",
+    "EN": "no translation"
+  }
+]
