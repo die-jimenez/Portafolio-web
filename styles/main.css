@@ -97,7 +97,7 @@ p>a {
   padding-top: 40px;
 }
 
-/* Buttons */
+/* Buttons, force update*/
 .button-1 {
   display: inline-flex;
   justify-content: space-between;
