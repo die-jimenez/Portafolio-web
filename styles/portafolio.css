@@ -20,6 +20,7 @@
   width: 100%;
   height: 270px;
   border: 5px solid var(--dark-color);
+  margin-bottom: 20px;
 }
 
 .project-card>div:first-of-type {
