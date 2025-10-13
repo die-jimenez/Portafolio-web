@@ -1,20 +1,21 @@
 :root {
   --cream-color: #FBF5EB;
   --dark-color: #1B1B1B;
+  --third-color: #bc9d83;
   --montserrat: 'Montserrat', sans-serif;
   --roboto: 'Roboto', sans-serif;
 }
 
 .mini-gallery-container {
-  width: 100%;
+  width: 95%;
   overflow: hidden;
-  margin-top: -35px;
+  margin: -25px auto 0 auto;
 }
 
 .mini-gallery-wrapper {
   width: 100%;
   overflow: hidden;
-  margin: 0 auto;
+  margin: 10px auto;
 }
 
 .mini-gallery-track {
@@ -38,6 +39,7 @@
   height: 100%;
   object-fit: cover;
   display: block;
+ border: 4px solid var(--cream-color);
 }
 
 /* Barra de scroll personalizada */
@@ -52,7 +54,7 @@
 .mini-gallery-scrollbar-track {
   flex: 1;
   height: 12px;
-  background: #8a8a8a;
+  background: #5e5747;
   border-radius: 4px;
   position: relative;
   cursor: pointer;
@@ -61,7 +63,7 @@
 
 .mini-gallery-scrollbar-thumb {
   height: 100%;
-  background: var(--dark-color);
+  background: var(--cream-color);
   position: absolute;
   border-radius: 4px;
   left: 0;
@@ -70,11 +72,11 @@
 }
 
 .mini-gallery-scrollbar-thumb:hover {
-  background: #555;
+  background: var(--third-color);
 }
 
 .mini-gallery-scrollbar-thumb:active {
-  background: #222;
+  background: var(--third-color);
   cursor: grabbing;
 }
 
@@ -82,24 +84,29 @@
   width: 32px;
   height: 16px;
   border: 1px solid var(--dark-color);
-  background: var(--dark-color);
+  background: var(--cream-color);
   border-radius: 4px;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   transition: all 0.2s ease;
-  font-size: 14px;
-  color: var(--cream-color);
+  font-size: 16px;
+  color: var(--dark-color );
   user-select: none;
   line-height: normal;
 }
 
+.mini-gallery-nav-button span {
+  margin-top: 0px;
+  font-weight: bold;
+}
+
 .mini-gallery-nav-button:hover {
-  background:  #555;
+  background:  var(--third-color);
 }
 
 .mini-gallery-nav-button:active {
-  background: #222;
+  background: var(--third-color);
   transform: scale(0.95);
 }

@@ -49,6 +49,14 @@
 }
 
 /* ----- Imagen principal y boton -----*/
+
+.media-section {
+  background-color: var(--dark-color);
+  border-radius: 0 0 15px 15px;
+  padding-bottom: 20px;
+  margin-bottom: 40px;
+}
+
 .main-image {
   position: relative;
   margin-bottom: 40px;
@@ -174,6 +182,14 @@
 
 .iframe-container.playing .video-iframe {
   opacity: 1;
+}
+
+/* ----- Botones de refes externas -----*/
+.buttons-section {
+  display: flex;
+  gap: 10px;
+  width: 95%;
+  margin: 20px auto 0 auto;
 }
 
 
@@ -343,34 +359,10 @@
     padding: 10px 10px 0 10px;
   }
 
-  .mini-gallery-container {
-    padding: 0 10px;
-  }
-
   .iframe-container {
     width: 95%;
     height: 95%;
     margin: 10px;
-  }
-
-  .mini-gallery-item {
-    width: 240px;
-    height: 135px;
-  }
-
-  .mini-gallery-nav-button {
-    width: 50px;
-    height: 20px;
-    line-height: 10%;
-  }
-
-  .mini-gallery-scrollbar-container {
-    margin-bottom: 10px;
-  }
-
-  .mini-gallery-scrollbar-track {
-    height: 20px;
-    border-radius: 8px;
   }
 
   .project-info {
