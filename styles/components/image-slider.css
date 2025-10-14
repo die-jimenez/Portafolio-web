@@ -40,6 +40,35 @@
   object-fit: cover;
   display: block;
  border: 4px solid var(--cream-color);
+ cursor: pointer;
+}
+
+.mini-gallery-item img:hover {
+  filter: brightness(0.8);
+}
+
+.mini-gallery-play-icon {
+    position: relative;
+    top: -50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 55px;
+    height: 55px;
+    background-color: rgba(24, 24, 24, 0.9);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    pointer-events: none;
+    z-index: 10;
+}
+
+.mini-gallery-play-icon span {
+    font-size: 32px;
+    font-weight: bold;
+    margin-top: -5px;
+    margin-left: 2px;
+    color: rgba(251, 245, 235, 0.9);
 }
 
 /* Barra de scroll personalizada */
@@ -110,3 +139,5 @@
   background: var(--third-color);
   transform: scale(0.95);
 }
+
+
