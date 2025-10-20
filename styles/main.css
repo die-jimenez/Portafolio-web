@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;500;700;900&display=swap');
 
 /* Reset and general styles */
 * {
@@ -88,6 +88,10 @@ p>a {
   margin-bottom: 20px !important;
 }
 
+.mb-40 {
+  margin-bottom: 40px !important;
+}
+
 .padding-top-25 {
   padding-top: 25px;
 }
@@ -116,13 +120,13 @@ p>a {
   border: none;
 }
 
-.button-1 >a {
+.button-1>a {
   display: flex;
   align-items: center;
   margin: auto 0;
 }
 
-.button-1  .arrow {
+.button-1 .arrow {
   font-size: 24px;
   font-weight: 400;
   margin-left: 8px;

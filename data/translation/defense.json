@@ -56,8 +56,8 @@
   },
   {
     "key": "sb-3-bullet-2",
-    "ES": "Desarrollé la comunicación entre clientes (Unity) y servidor para juegos multijugador de entre 2 a 6 jugadores utilizando WebSocket",
-    "EN": "Built networking between clients (Unity) and server for 2-6 player games with WebSocket"
+    "ES": "Integración de Unity con el backend para la sincronización de jugadores",
+    "EN": "Integration of Unity with the backend for player synchronization"
   },
   {
     "key": "sb-3-bullet-3",
@@ -88,5 +88,145 @@
     "key": "section-2-sb2-p1",
     "ES": "Reduje en un 50% las animaciones creadas manualmente por los artistas, al generar animaciones procedurales para los dos tipos enemigos del juego, empleando sistemas de partículas y patrones de movimiento basados en las funciones seno y coseno.",
     "EN": "I reduced manually created artist animations by 50% by implementing procedural animations for both enemy types in the game, using particle systems and sine/cosine-based motion patterns."
+  },
+  {
+    "key": "table-title",
+    "ES": "Mi Rol",
+    "EN": "My Role"
+  },
+  {
+    "key": "table-desc-p1",
+    "ES": "Como <b>Unity & Full Stack Developer</b>, integré un equipo compuesto de tres programadores. Mi rol abarcó el desarrollo completo del juego en Unity, incluyendo el desarrollo del sistema multijugador y la integración cliente-servidor con la aplicación Web App de la empresa (frontend en Vue.js y backend en Node.js), mediante WebSocket.",
+    "EN": "As a <b>Unity & Full Stack Developer</b>, I was part of a three-person programming team. I developed the game in Unity from scratch, including the development of the multiplayer system and client-server integration with the company’s Web App (frontend in Vue.js and backend in Node.js) via WebSocket."
+  },
+  {
+    "key": "table-sb1",
+    "ES": "Mecánicas y jugabilidad",
+    "EN": "Mechanics and Gameplay"
+  },
+  {
+    "key": "table-desc-row1",
+    "ES": "Tarea",
+    "EN": "Task"
+  },
+  {
+    "key": "table-desc-row2",
+    "ES": "Descripción",
+    "EN": "Description"
+  },
+  {
+    "key": "table-sb1-row1-name",
+    "ES": "Collider dinámicos:",
+    "EN": "Dynamic Colliders:"
+  },
+  {
+    "key": "table-sb1-row1-desc",
+    "ES": "Sistema de colliders irregulares que se ajustan automáticamente según la forma del objeto.",
+    "EN": "System of irregular colliders that automatically adjust according to the object's shape."
+  },
+  {
+    "key": "table-sb1-row2-name",
+    "ES": "Dificultad dinámica",
+    "EN": "Dynamic Difficulty"
+  },
+  {
+    "key": "table-sb1-row2-desc",
+    "ES": "Ajuste de dificultad según el número y la habilidad de los jugadores.",
+    "EN": "Difficulty scaling according to player count and skill level."
+  },
+  {
+    "key": "table-sb2",
+    "ES": "Multijugador",
+    "EN": "Multiplayer"
+  },
+  {
+    "key": "table-sb2-row1-name",
+    "ES": "Sincronización cliente-servidor",
+    "EN": "Client–Server Synchronization"
+  },
+  {
+    "key": "table-sb2-row1-desc",
+    "ES": "Integración entre <b>Unity y Node.js mediante Socket.io</b> para sincronizar jugadores y eventos.",
+    "EN": "Integration between <b>Unity and Node.js using Socket.io</b> to synchronize players and events."
+  },
+  {
+    "key": "table-sb2-row2-name",
+    "ES": "Ciclo de partidas:",
+    "EN": "Match Cycle:"
+  },
+  {
+    "key": "table-sb2-row2-desc",
+    "ES": "Flujo completo con pantallas de espera, juego, resultados y postpartida sincronizadas entre cliente y servidor.",
+    "EN": "Complete flow including waiting screens, gameplay, results, and post-game screens synchronized between client and server."
+  },
+  {
+    "key": "table-sb2-row3-name",
+    "ES": "Colas de espera:",
+    "EN": "Waiting Queues:"
+  },
+  {
+    "key": "table-sb2-row3-desc",
+    "ES": "Organiza y conecta jugadores a partidas disponibles.",
+    "EN": "Automatically connects players to open matches."
+  },
+  {
+    "key": "table-sb3",
+    "ES": "Comportamiento de IA",
+    "EN": "AI Behavior"
+  },
+  {
+    "key": "table-sb3-row1-name",
+    "ES": "Sistema de spawn \"dinámico\":",
+    "EN": "Dynamic Spawn System:"
+  },
+  {
+    "key": "table-sb3-row1-desc",
+    "ES": "Ajusta la aparición de enemigos según la dificultad dinámica determinada.",
+    "EN": "Adjusts enemy spawning according to the determined dynamic difficulty."
+  },
+  {
+    "key": "table-sb3-row2-name",
+    "ES": "IA de movimiento:",
+    "EN": "Movement AI:"
+  },
+  {
+    "key": "table-sb3-row2-desc",
+    "ES": "Movimiento básico de perseguir un objetivo.",
+    "EN": "Basic movement system that follows a target."
+  },
+  {
+    "key": "table-sb4",
+    "ES": "UI & Technical art",
+    "EN": "UI & Technical Art"
+  },
+  {
+    "key": "table-sb4-row1-name",
+    "ES": "Implemantación de Interfaz",
+    "EN": "Interface Implementation"
+  },
+  {
+    "key": "table-sb4-row1-desc",
+    "ES": "Pantalla de juego y pantalla de espera adaptables a diferentes resoluciones usando <b>uGUI</b>.",
+    "EN": "Game and waiting screens adaptable to different resolutions using <b>uGUI</b>."
+  },
+  {
+    "key": "table-sb4-row2-name",
+    "ES": "Animaciones procedurales (sencillas):",
+    "EN": "Procedural Animations (Basic):"
+  },
+  {
+    "key": "table-sb4-row2-desc",
+    "ES": "Animación de movimiento de enemigos en forma de onda, mediante curvas \"sin\" | \"cos\".",
+    "EN": "Wave-style enemy movement using “sin” | “cos” curves."
+  },
+  {
+    "key": "table-sb4-row3-name",
+    "ES": "Sistema de Partículas",
+    "EN": "Particle System"
+  },
+  {
+    "key": "table-sb4-row3-desc",
+    "ES": "Efectos de partículas hechos con <b>Particle System y Shader Graph</b>.",
+    "EN": "Particle effects created with <b>Particle System and Shader Graph</b>."
   }
 ]
