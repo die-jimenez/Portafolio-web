@@ -41,13 +41,18 @@
   },
   {
     "key": "sb-2-bullet-3",
-    "ES": "Implementación del sistema de diálogos y localización, incluyendo soporte multilenguaje para textos y audios usando archivos csv y json.",
-    "EN": "Implementation of dialogs and localization systems, including a tool for switching texts and audio to multiple languages using CSV and JSON files."
+    "ES": "Implementación del sistema de diálogos y localización usando archivos csv y json.",
+    "EN": "Implementation of dialogs and localization systems using CSV and JSON files."
   },
   {
     "key": "sb-2-bullet-4",
     "ES": "Desarrollo de programación UI (menú principal e interfaz de gameplay)",
     "EN": "Development of UI programming (main menu and gameplay interface)"
+  },
+  {
+    "key": "sb-2-bullet-5",
+    "ES": "Manejo de Post Procesado y Shaders con URP.",
+    "EN": "Post-processing and Shader Handling with URP."
   },
   {
     "key": "section-2-title",
