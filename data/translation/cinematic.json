@@ -1,0 +1,27 @@
+[
+  {
+    "key": "main-title",
+    "ES": "A Foreigner’s Story (Cinemática)",
+    "EN": "A Foreigner’s Story (Cinematic)"
+  },
+  {
+    "key": "play-button",
+    "ES": "Itchio",
+    "EN": "Itchio"
+  },
+  {
+    "key": "sb-1",
+    "ES": "Concepto",
+    "EN": "Concept"
+  },
+  {
+    "key": "sb-1-p1",
+    "ES": "Es una cinemática hecha en Unity, utilizando Timelines. La realicé a inicios de 2025 para un concurso internacional de cine y animación. Todos los efectos visuales, incluyendo la lluvia, humo y atmósfera en general, fueron hechos utilizando sistemas de partículas e iluminación.",
+    "EN": "This is a cinematic created in Unity using Timelines. It was made in early 2025 for a film and animation competition. All visual effects, including rain and atmosphere, were achieved using particle systems and lighting."
+  },
+  {
+    "key": "sb-1-p2",
+    "ES": "Las animaciones de los personajes fueron hechas por Penusbmic.",
+    "EN": "Character animations were created by Penusbmic."
+  }
+]

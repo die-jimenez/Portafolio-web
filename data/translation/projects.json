@@ -12,7 +12,7 @@
   {
     "key": "defense-desc",
     "ES": "Es un juego multijugador online para 1 a 6 jugadores, desarrollado para web. En mi rol como programador de Unity me encargué de las mécanicas de juego, la comunicación cliente-servidor, entre otras tareas.",
-    "EN": "It’s an online multiplayer game for 1–6 players, developed for the web. In my role as a Unity developer, I handled the gameplay mechanics, client-server communication, and other tasks."
+    "EN": "It’s an online multiplayer game for 1–6 players, developed for the web. In my role as a Unity developer, I handled the gameplay mechanics, client-server communication, and and other tasks."
   },
   {
     "key": "more-details-button",
@@ -32,12 +32,22 @@
   {
     "key": "a-future-desc",
     "ES": "Un juego narrativo con mecánicas de rogue-lite que combina secciones en 2D y 3D. Desarrollado desde cero en Unity. Seleccionado para el EVA2025 y expuesto en una feria de arte a fines de 2024.",
-    "EN": "A narrative serious game with rogue-lite mechanics, combining 2D and 3D sections. Developed from scratch in Unity, where I was in charge of all technical development as the team’s only programmer."
+    "EN": "A narrative game with rogue-lite mechanics, combining 2D and 3D sections. Developed from scratch in Unity. Selected for EVA 2025."
+  },
+  {
+    "key": "cinematic-title",
+    "ES": "A Foreigner’s Story (2025)",
+    "EN": "A Foreigner’s Story (2025)"
+  },
+  {
+    "key": "cinematic-desc",
+    "ES": "Es una cinemática de un minuto hecha en Unity. Cuenta la experiencia de un extranjero tras migrar. Fue realizada para un concurso internacional de cine y animación.",
+    "EN": "One-minute cinematic made in Unity that tells the story of a foreigner in a new country. It was made for a film and animation competition."
   },
   {
     "key": "peep-title",
-    "ES": "Peep (2021)",
-    "EN": "Peep (2021) "
+    "ES": "Peep - Prototipo (2021)",
+    "EN": "Peep - Prototype (2021)"
   },
   {
     "key": "peep-desc",
